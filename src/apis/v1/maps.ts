@@ -62,7 +62,7 @@ export type Map = {
   /**
    * The dimensions of the map, given as the coordinates of the lower-left (SW) and upper-right (NE) corners.
    */
-  map_rect: Coordinate2D[];
+  map_rect: [Coordinate2D, Coordinate2D];
 
   /**
    * The dimensions of the map within the continent coordinate system, given as the coordinates of the upper-left (NW) and lower-right (SE) corners.
