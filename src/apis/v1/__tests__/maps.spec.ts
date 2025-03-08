@@ -17,7 +17,7 @@ describe('fn(maps)', () => {
     expect(response.maps['15'].map_name).toEqual(expectedName);
   });
 
-  it('should return a list of the maps', async () => {
+  it('should support returning all maps', async () => {
     const response = await maps();
 
     expect(Object.keys(response.maps).length).greaterThanOrEqual(1016);
