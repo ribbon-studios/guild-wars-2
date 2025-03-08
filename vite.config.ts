@@ -16,6 +16,11 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
   },
+  resolve: {
+    alias: {
+      '@/': resolve(__dirname, './src/'),
+    },
+  },
   test: {
     environment: 'node',
     setupFiles: ['./__tests__/setup-tests.ts'],

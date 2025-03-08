@@ -1,8 +1,8 @@
+import { SupportedLanguages } from '@/types/lang';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {
-  // TODO: Figure out a list of all the supported languages
-  lang?: string;
+  lang?: SupportedLanguages;
 };
 
 export type MapName = {
