@@ -2,7 +2,14 @@ import { rfetch } from '@ribbon-studios/js-utils';
 import { SupportedLanguages, Coordinate } from '@/types';
 
 export type Options = {
+  /**
+   * The id of the specific map you want to request.
+   */
   map_id?: number;
+
+  /**
+   * Show localized texts in the specified language.
+   */
   lang?: SupportedLanguages;
 };
 

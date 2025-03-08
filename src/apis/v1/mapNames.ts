@@ -2,6 +2,9 @@ import { SupportedLanguages } from '@/types/lang';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {
+  /**
+   * Show localized texts in the specified language.
+   */
   lang?: SupportedLanguages;
 };
 

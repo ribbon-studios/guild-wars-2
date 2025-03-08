@@ -13,7 +13,6 @@ describe('fn(worldNames)', () => {
       lang,
     });
 
-    expect(names);
     expect(names.length).greaterThan(1);
 
     const kaineng = names.find(({ id }) => id === '1001');
