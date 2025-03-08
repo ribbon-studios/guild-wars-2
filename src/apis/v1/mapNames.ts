@@ -9,7 +9,14 @@ export type Options = {
 };
 
 export type MapName = {
+  /**
+   * The map id.
+   */
   id: string;
+
+  /**
+   * The name of the map in the specified language.
+   */
   name: string;
 };
 

@@ -9,7 +9,14 @@ export type Options = {
 };
 
 export type WorldName = {
+  /**
+   * The world id.
+   */
   id: string;
+
+  /**
+   * The name of the world in the specified language.
+   */
   name: string;
 };
 
