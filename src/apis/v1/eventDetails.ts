@@ -10,6 +10,7 @@ export type Options = {
 
   /**
    * Show localized texts in the specified language.
+   * @default 'en'
    */
   lang?: SupportedLanguages;
 };
