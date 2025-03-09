@@ -1,25 +1,36 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import { worldNames } from '..';
-import { SupportedLanguages } from '@/types';
+import { NameIdentifier } from '@/types';
+import { rfetch } from '@ribbon-studios/js-utils';
+import names from './examples/names/worlds.json';
+
+vi.mock('@ribbon-studios/js-utils');
+
+const fetchMock = vi.mocked(rfetch, true);
 
 describe('fn(worldNames)', () => {
-  it.each([
-    ['en', 'Anvil Rock'],
-    ['fr', "Rocher de l'enclume"],
-    ['de', 'Amboss-Stein'],
-    ['es', 'Roca del Yunque'],
-  ] as [SupportedLanguages, string][])('should return a list of the map names in "%s"', async (lang, expectedName) => {
-    const names = await worldNames({
-      lang,
+  beforeEach(() => {
+    fetchMock.get.mockResolvedValue(names);
+  });
+
+  it('should return a list of the world names', async () => {
+    const names = await worldNames();
+
+    expectTypeOf(names).toEqualTypeOf<NameIdentifier[]>();
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/world_names.json', {
+      params: undefined,
+    });
+  });
+
+  it('should support other languages', async () => {
+    await worldNames({
+      lang: 'fr',
     });
 
-    expect(names.length).greaterThan(1);
-
-    const kaineng = names.find(({ id }) => id === '1001');
-
-    expect(kaineng).toEqual({
-      id: '1001',
-      name: expectedName,
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/world_names.json', {
+      params: {
+        lang: 'fr',
+      },
     });
   });
 });

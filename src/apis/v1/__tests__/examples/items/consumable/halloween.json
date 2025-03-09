@@ -1,0 +1,17 @@
+{
+  "item_id": "20010",
+  "name": "Rejuvenation Booster",
+  "description": "Double-click to gain a buff that regenerates health for one hour.",
+  "type": "Consumable",
+  "level": "0",
+  "rarity": "Masterwork",
+  "vendor_value": "0",
+  "icon_file_id": "434412",
+  "icon_file_signature": "0439C04FE14D6AEC802A47139F78DD6729EC63A0",
+  "game_types": ["Dungeon", "Pve", "Wvw"],
+  "flags": ["AccountBound", "NoSell"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Halloween"
+  }
+}

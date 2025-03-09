@@ -22,7 +22,7 @@ export type Response = {
 };
 
 export function maps(options?: Options) {
-  return rfetch<Response>('https://api.guildwars2.com/v1/maps.json', {
+  return rfetch.get<Response>('https://api.guildwars2.com/v1/maps.json', {
     params: options,
   });
 }

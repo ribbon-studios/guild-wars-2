@@ -1,0 +1,19 @@
+{
+  "item_id": "23003",
+  "name": "Steel Mining Pick",
+  "description": "Used to mine Gold Ore, and all other lesser metals.",
+  "type": "Gathering",
+  "level": "20",
+  "rarity": "Basic",
+  "vendor_value": "11",
+  "icon_file_id": "66254",
+  "icon_file_signature": "3CD995B576C8CB39B02D4826EA04690701755ECB",
+  "default_skin": "2395",
+  "upgrade_recipes": [],
+  "game_types": ["PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["AccountBound", "NoSalvage", "NoSell", "AccountBindOnUse"],
+  "restrictions": [],
+  "gathering": {
+    "type": "Mining"
+  }
+}

@@ -5,5 +5,5 @@ export type Response = {
 };
 
 export function items() {
-  return rfetch<Response>('https://api.guildwars2.com/v1/items.json');
+  return rfetch.get<Response>('https://api.guildwars2.com/v1/items.json');
 }

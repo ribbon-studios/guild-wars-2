@@ -1,0 +1,15 @@
+{
+  "description": "Salvage Item",
+  "flags": [],
+  "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+  "icon_file_id": "598598",
+  "icon_file_signature": "034978F6ED34E80168CF40179CAC090E5CC1C249",
+  "item_id": "43555",
+  "level": "0",
+  "name": "Aetherized Metal Scrap",
+  "rarity": "Rare",
+  "restrictions": [],
+  "type": "Trophy",
+  "upgrade_recipes": [],
+  "vendor_value": "105"
+}

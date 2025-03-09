@@ -5,3 +5,4 @@ export * from './item/index';
 export * from './lang';
 export * from './location';
 export * from './map';
+export * from './names';

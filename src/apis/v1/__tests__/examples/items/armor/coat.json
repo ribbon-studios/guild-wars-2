@@ -1,0 +1,42 @@
+{
+  "armor": {
+    "attribute_adjustment": 330.3,
+    "defense": "271",
+    "infix_upgrade": {
+      "attributes": [
+        {
+          "attribute": "Power",
+          "modifier": 83
+        },
+        {
+          "attribute": "Precision",
+          "modifier": 116
+        },
+        {
+          "attribute": "ConditionDamage",
+          "modifier": 83
+        }
+      ],
+      "id": 159
+    },
+    "infusion_slots": [],
+    "secondary_suffix_item_id": "",
+    "suffix_item_id": "24732",
+    "type": "Coat",
+    "weight_class": "Light"
+  },
+  "default_skin": "9",
+  "description": "",
+  "flags": ["SoulBindOnUse"],
+  "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+  "icon_file_id": "61011",
+  "icon_file_signature": "FB0AA64F98303AE5112408EF3DC8C7307EA118F8",
+  "item_id": "100",
+  "level": "72",
+  "name": "Rampager's Seer Coat of Divinity",
+  "rarity": "Exotic",
+  "restrictions": [],
+  "type": "Armor",
+  "upgrade_recipes": [],
+  "vendor_value": "360"
+}

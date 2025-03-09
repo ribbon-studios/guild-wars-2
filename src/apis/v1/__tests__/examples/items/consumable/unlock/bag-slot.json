@@ -1,0 +1,19 @@
+{
+  "item_id": "19993",
+  "name": "Bag Slot Expansion",
+  "description": "Add an extra bag slot to a character's inventory. The slot comes equipped with a basic bag. Each character can unlock up to 10 additional bag slots.",
+  "type": "Consumable",
+  "level": "0",
+  "rarity": "Masterwork",
+  "vendor_value": "0",
+  "icon_file_id": "66588",
+  "icon_file_signature": "6AECEE0A0704F069B3776BC66516EB2F0E0DE644",
+  "upgrade_recipes": [],
+  "game_types": ["Pvp", "PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["AccountBound", "NoSalvage", "NoSell", "DeleteWarning", "AccountBindOnUse"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Unlock",
+    "unlock_type": "BagSlot"
+  }
+}

@@ -12,7 +12,7 @@ export enum ArmorType {
   COAT = 'Coat',
   GLOVES = 'Gloves',
   HELM = 'Helm',
-  HELM_ACQUATIC = 'HelmAcquatic',
+  HELM_AQUATIC = 'HelmAquatic',
   LEGGINGS = 'Leggings',
   SHOULDERS = 'Shoulders',
 }
@@ -32,6 +32,11 @@ export type ArmorItem = BaseItem & {
    * Armor specific properties.
    */
   armor: {
+    /**
+     * The armor type.
+     */
+    type: ArmorType;
+
     /**
      * The armor weight class.
      */

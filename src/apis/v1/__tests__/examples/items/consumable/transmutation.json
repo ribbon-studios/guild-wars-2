@@ -1,0 +1,17 @@
+{
+  "item_id": "8471",
+  "name": "Transmutation Crystal",
+  "description": "Double-click to combine the appearance of one item with the attributes of another. Items must be of the same type. Usable on items up to level 80.",
+  "type": "Consumable",
+  "level": "0",
+  "rarity": "Masterwork",
+  "vendor_value": "64",
+  "icon_file_id": "63056",
+  "icon_file_signature": "B50BF7D22026382EEE702714761DB87901EF710E",
+  "game_types": ["Dungeon", "Pve", "Wvw"],
+  "flags": ["AccountBound", "NoSalvage", "NoSell"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Transmutation"
+  }
+}

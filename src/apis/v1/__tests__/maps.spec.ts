@@ -1,25 +1,37 @@
-import { describe, it, expect } from 'vitest';
-import { SupportedLanguages } from '@/types';
+import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
+import { Map } from '@/types';
 import { maps } from '../maps';
+import data from './examples/maps.json';
+import { rfetch } from '@ribbon-studios/js-utils';
+
+vi.mock('@ribbon-studios/js-utils');
+
+const fetchMock = vi.mocked(rfetch, true);
 
 describe('fn(maps)', () => {
-  it.each([
-    ['en', 'Queensdale'],
-    ['fr', 'La Vallée de la reine'],
-    ['de', 'Königintal'],
-    ['es', 'Valle de la Reina'],
-  ] as [SupportedLanguages, string][])('should return the requested map in "%s"', async (lang, expectedName) => {
-    const response = await maps({
+  beforeEach(() => {
+    fetchMock.get.mockResolvedValue(data);
+  });
+
+  it('should return the requested map', async () => {
+    await maps({
       map_id: 15,
-      lang,
     });
 
-    expect(response.maps['15'].map_name).toEqual(expectedName);
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/maps.json', {
+      params: {
+        map_id: 15,
+      },
+    });
   });
 
   it('should support returning all maps', async () => {
     const response = await maps();
 
-    expect(Object.keys(response.maps).length).greaterThanOrEqual(1016);
+    expect(Object.keys(response.maps)).length(1016);
+    expectTypeOf(response.maps).toEqualTypeOf<Record<number, Map>>();
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/maps.json', {
+      params: undefined,
+    });
   });
 });

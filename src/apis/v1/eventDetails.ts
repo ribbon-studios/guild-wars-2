@@ -23,7 +23,7 @@ export type Response = {
 };
 
 export function eventDetails(options?: Options) {
-  return rfetch<Response>('https://api.guildwars2.com/v1/event_details.json', {
+  return rfetch.get<Response>('https://api.guildwars2.com/v1/event_details.json', {
     params: options,
   });
 }

@@ -1,0 +1,19 @@
+{
+  "item_id": "87954",
+  "name": "Volatile Magic Logging Tool",
+  "description": "Perfect for use on all types of trees. Unlimited use.",
+  "type": "Gathering",
+  "level": "0",
+  "rarity": "Rare",
+  "vendor_value": "0",
+  "icon_file_id": "1998934",
+  "icon_file_signature": "5811404EE49FA35A940244E9D55C2CF8B00D7D63",
+  "default_skin": "8161",
+  "upgrade_recipes": [],
+  "game_types": ["PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["HideSuffix", "AccountBound", "NoSalvage", "NoSell", "DeleteWarning", "AccountBindOnUse"],
+  "restrictions": [],
+  "gathering": {
+    "type": "Logging"
+  }
+}

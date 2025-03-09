@@ -1,0 +1,19 @@
+{
+  "item_id": "85733",
+  "name": "Volatile Harvesting Sickle",
+  "description": "Used to gather all plants.\n\nRewards Volatile Magic in addition to harvesting results.",
+  "type": "Gathering",
+  "level": "60",
+  "rarity": "Fine",
+  "vendor_value": "50",
+  "icon_file_id": "1947028",
+  "icon_file_signature": "510BDDD537EDFE435515527817CA301704E54DE9",
+  "default_skin": "2385",
+  "upgrade_recipes": [],
+  "game_types": ["PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["AccountBound", "NoSalvage", "NoSell", "NotUpgradeable", "AccountBindOnUse"],
+  "restrictions": [],
+  "gathering": {
+    "type": "Foraging"
+  }
+}

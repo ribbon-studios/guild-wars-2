@@ -23,6 +23,9 @@ export default defineConfig({
     environment: 'node',
     setupFiles: ['./__tests__/setup-tests.ts'],
     include: ['./src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    typecheck: {
+      enabled: true,
+    },
     coverage: {
       reporter: [process.env.CI ? 'text-summary' : 'text', 'lcovonly'],
       include: ['src/**'],

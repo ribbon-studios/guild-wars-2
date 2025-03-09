@@ -1,0 +1,13 @@
+{
+  "emblem": {
+    "background_color_id": 443,
+    "background_id": 22,
+    "flags": ["FlipBackgroundHorizontal", "FlipForegroundHorizontal"],
+    "foreground_id": 199,
+    "foreground_primary_color_id": 137,
+    "foreground_secondary_color_id": 121
+  },
+  "guild_id": "A75A2574-FA76-4E2B-A6F5-7B3F23F0A605",
+  "guild_name": "Prismatica",
+  "tag": "LGBT"
+}

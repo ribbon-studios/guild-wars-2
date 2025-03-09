@@ -1,0 +1,19 @@
+{
+  "item_id": "20356",
+  "name": "Abyss Dye",
+  "description": "Double-click to unlock this dye color for this character.",
+  "type": "Consumable",
+  "level": "0",
+  "rarity": "Rare",
+  "vendor_value": "50",
+  "icon_file_id": "66649",
+  "icon_file_signature": "DFFC622FB06E0511A49C53961703331CE030E7BC",
+  "game_types": ["Dungeon", "Pve", "Pvp", "PvpLobby", "Wvw"],
+  "flags": ["NoSell"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Unlock",
+    "unlock_type": "Dye",
+    "color_id": "473"
+  }
+}

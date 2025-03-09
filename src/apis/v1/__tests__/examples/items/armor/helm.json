@@ -1,0 +1,45 @@
+{
+  "item_id": "98089",
+  "name": "Aether Visor",
+  "type": "Armor",
+  "level": "80",
+  "rarity": "Exotic",
+  "vendor_value": "330",
+  "icon_file_id": "2685589",
+  "icon_file_signature": "9A741CA1B6DC0B0CCF6E227580A2265E62DF715D",
+  "default_skin": "10841",
+  "upgrade_recipes": [],
+  "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["HideSuffix", "AccountBound", "NoSell", "SoulBindOnUse"],
+  "restrictions": [],
+  "armor": {
+    "type": "Helm",
+    "weight_class": "Medium",
+    "defense": "97",
+    "infusion_slots": [],
+    "attribute_adjustment": 170.72,
+    "infix_upgrade": {
+      "id": 1111,
+      "attributes": [
+        {
+          "attribute": "Power",
+          "modifier": 51
+        },
+        {
+          "attribute": "Precision",
+          "modifier": 51
+        },
+        {
+          "attribute": "Vitality",
+          "modifier": 28
+        },
+        {
+          "attribute": "CritDamage",
+          "modifier": 28
+        }
+      ]
+    },
+    "suffix_item_id": "",
+    "secondary_suffix_item_id": ""
+  }
+}

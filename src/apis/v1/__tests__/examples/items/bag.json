@@ -1,0 +1,19 @@
+{
+  "bag": {
+    "no_sell_or_sort": "1",
+    "size": "8"
+  },
+  "description": "8 Slots. Items in this bag will never appear in a sell-to-vendor list and will not move when inventory is sorted.",
+  "flags": ["NoSalvage"],
+  "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+  "icon_file_id": "219376",
+  "icon_file_signature": "647CF53A7C4903C2E09091CBDC4F215834C50A4B",
+  "item_id": "9480",
+  "level": "0",
+  "name": "8 Slot Invisible Bag",
+  "rarity": "Fine",
+  "restrictions": [],
+  "type": "Bag",
+  "upgrade_recipes": [],
+  "vendor_value": "22"
+}

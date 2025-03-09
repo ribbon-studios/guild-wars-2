@@ -1,0 +1,19 @@
+{
+  "item_id": "50018",
+  "name": "Maintenance Oil Station",
+  "description": "Utility Station: Double-click to set out a model of Gate Hub Plaza which allows players in the area to apply maintenance oil to their weapons. Station stays active for five minutes.",
+  "type": "Consumable",
+  "level": "80",
+  "rarity": "Masterwork",
+  "vendor_value": "66",
+  "icon_file_id": "740204",
+  "icon_file_signature": "43C10FB3C60AFBC9CFD50413170A4D553A0046D8",
+  "game_types": ["Dungeon", "Pve", "Wvw"],
+  "flags": ["NoSell"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Generic",
+    "duration_ms": "5400000",
+    "description": "Gain precision equal to 6% of your toughness\nGain precision equal to 4% of your vitality\n+10 Experience from kills"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "item_id": "12557",
+  "name": "Tray of Strawberry Pies",
+  "description": "Dessert Feast: Double-click to set out a Tray of Strawberry Pies to share with anyone in the area. Tray stays active for 5 minutes.",
+  "type": "Consumable",
+  "level": "25",
+  "rarity": "Masterwork",
+  "vendor_value": "31",
+  "icon_file_id": "455551",
+  "icon_file_signature": "2BF01B2F0D55FE754294BCBE0E4C2CCBF2B3F7C5",
+  "game_types": ["Dungeon", "Pve", "Wvw"],
+  "flags": ["NoSell"],
+  "restrictions": [],
+  "consumable": {
+    "type": "Food"
+  }
+}

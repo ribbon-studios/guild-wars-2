@@ -1,25 +1,25 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import { mapNames } from '../';
-import { SupportedLanguages } from '@/types';
+import { NameIdentifier } from '@/types';
+import names from './examples/names/maps.json';
+import { rfetch } from '@ribbon-studios/js-utils';
+
+vi.mock('@ribbon-studios/js-utils');
+
+const fetchMock = vi.mocked(rfetch, true);
 
 describe('fn(mapNames)', () => {
-  it.each([
-    ['en', 'Queensdale'],
-    ['fr', 'La Vallée de la reine'],
-    ['de', 'Königintal'],
-    ['es', 'Valle de la Reina'],
-  ] as [SupportedLanguages, string][])('should return a list of the map names in "%s"', async (lang, expectedName) => {
-    const names = await mapNames({
-      lang,
-    });
+  beforeEach(() => {
+    fetchMock.get.mockResolvedValue(names);
+  });
 
-    expect(names.length).greaterThan(1);
+  it('should return a list of the map names', async () => {
+    const names = await mapNames();
 
-    const queensdale = names.find(({ id }) => id === '15');
-
-    expect(queensdale).toEqual({
-      id: '15',
-      name: expectedName,
+    expect(names).length(1016);
+    expectTypeOf(names).toEqualTypeOf<NameIdentifier[]>();
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/map_names.json', {
+      params: undefined,
     });
   });
 });

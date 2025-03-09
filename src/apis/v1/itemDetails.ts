@@ -15,7 +15,7 @@ export type Options = {
 };
 
 export function itemDetails(options: Options) {
-  return rfetch<Item>('https://api.guildwars2.com/v1/item_details.json', {
+  return rfetch.get<Item>('https://api.guildwars2.com/v1/item_details.json', {
     params: options,
   });
 }

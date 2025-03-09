@@ -16,7 +16,7 @@ export type Options =
     };
 
 export function guildDetails(options?: Options) {
-  return rfetch<Guild>('https://api.guildwars2.com/v1/guild_details.json', {
+  return rfetch.get<Guild>('https://api.guildwars2.com/v1/guild_details.json', {
     params: options,
   });
 }
