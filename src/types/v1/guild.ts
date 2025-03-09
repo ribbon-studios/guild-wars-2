@@ -39,3 +39,25 @@ export type Emblem = {
    */
   foreground_seconday_color_id: number;
 };
+
+export type Guild = {
+  /**
+   * The guild id.
+   */
+  guild_id: string;
+
+  /**
+   * The guild name.
+   */
+  guild_name: string;
+
+  /**
+   * The guild tag.
+   */
+  tag: string;
+
+  /**
+   * If present, it holds detailed information about the guilds emblem.
+   */
+  emblem: Emblem;
+};

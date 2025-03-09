@@ -22,8 +22,8 @@
   },
   "scripts": {
     "ci": "bun install --frozen-lockfile",
-    "test": "vitest",
-    "test:coverage": "vitest --coverage",
+    "test": "vitest --no-isolate --pool=threads",
+    "test:coverage": "vitest --coverage --no-isolate --pool=threads",
     "lint": "eslint 'src/**/*.ts'",
     "build": "rm -rf dist && vite build"
   },

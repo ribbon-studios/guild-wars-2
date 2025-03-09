@@ -1,5 +1,5 @@
-import { Location, SupportedLanguages } from '@/types';
-import { EventFlags } from '@/types';
+import { SupportedLanguages } from '@/types';
+import { Event } from '@/types';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {
@@ -12,49 +12,6 @@ export type Options = {
    * Show localized texts in the specified language.
    */
   lang?: SupportedLanguages;
-};
-
-export type Event = {
-  /**
-   * The name of the event.
-   */
-  name: string;
-
-  /**
-   * The event level.
-   */
-  level: number;
-
-  /**
-   * The map where the event takes place.
-   */
-  map_id: number;
-
-  /**
-   * A list of flags containing information about the event.
-   * @see {@link EventFlags}
-   */
-  flags: EventFlags[];
-
-  /**
-   * The location of the event.
-   */
-  location: Location;
-
-  /**
-   * The icon for the event.
-   */
-  icon?: {
-    /**
-     * The file id to be used with the render service.
-     */
-    file_id: number;
-
-    /**
-     * The file signature to be used with the render service.
-     */
-    signature: string;
-  };
 };
 
 export type Response = {
