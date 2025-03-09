@@ -1,5 +1,5 @@
 import { Location, SupportedLanguages } from '@/types';
-import { EventFlags } from '@/types/event-flags';
+import { EventFlags } from '@/types';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {
