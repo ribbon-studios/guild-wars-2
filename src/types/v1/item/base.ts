@@ -9,7 +9,6 @@ export enum ItemType {
   GIZMO = 'Gizmo',
   MINI_PET = 'MiniPet',
   TOOL = 'Tool',
-  TRAIT = 'Trait',
   TRINKET = 'Trinket',
   TROPHY = 'Trophy',
   UPGRADE_COMPONENT = 'UpgradeComponent',

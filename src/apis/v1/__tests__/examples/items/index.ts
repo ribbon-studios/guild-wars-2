@@ -8,6 +8,7 @@ import craftingMaterial from './crafting-material.json';
 import gathering from './gathering';
 import gizmo from './gizmo.json';
 import miniPet from './mini-pet.json';
+import tool from './tool.json';
 import trinket from './trinket';
 import trophy from './trophy.json';
 import upgradeComponent from './upgrade-component';
@@ -23,8 +24,7 @@ export default {
   [ItemType.GATHERING]: gathering,
   [ItemType.GIZMO]: gizmo,
   [ItemType.MINI_PET]: miniPet,
-  [ItemType.TOOL]: undefined,
-  [ItemType.TRAIT]: undefined,
+  [ItemType.TOOL]: tool,
   [ItemType.TRINKET]: trinket,
   [ItemType.TROPHY]: trophy,
   [ItemType.UPGRADE_COMPONENT]: upgradeComponent,

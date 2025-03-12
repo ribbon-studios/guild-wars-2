@@ -1,0 +1,19 @@
+{
+  "item_id": "23040",
+  "name": "Basic Salvage Kit",
+  "description": "Double-click to salvage crafting materials from an item in your inventory. 10% chance of rarer materials. 20% chance of salvaging upgrades.",
+  "type": "Tool",
+  "level": "0",
+  "rarity": "Basic",
+  "vendor_value": "11",
+  "icon_file_id": "66765",
+  "icon_file_signature": "F0B4025A23D3D1ADE0466FFEAA7023D8EFD8422C",
+  "upgrade_recipes": [],
+  "game_types": ["Pvp", "PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+  "flags": ["AccountBound", "NoSalvage", "NoSell", "AccountBindOnUse"],
+  "restrictions": [],
+  "tool": {
+    "type": "Salvage",
+    "charges": "25"
+  }
+}

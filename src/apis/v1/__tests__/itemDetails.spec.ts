@@ -43,8 +43,7 @@ describe('fn(itemDetails)', () => {
       ItemType.CRAFTING_MATERIAL,
       ItemType.GIZMO,
       ItemType.MINI_PET,
-      // ItemType.TOOL,
-      // ItemType.TRAIT,
+      ItemType.TOOL,
       ItemType.TROPHY,
       ItemType.WEAPON,
     ])('should support "%s" items', async (type) => {
