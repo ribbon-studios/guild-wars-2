@@ -1,4 +1,6 @@
+export * from './continent';
 export * from './coordinate';
+export * from './dimension';
 export * from './event';
 export * from './guild';
 export * from './item/index';

@@ -1,12 +1,7 @@
 import { rfetch } from '@ribbon-studios/js-utils';
-import { SupportedLanguages, Map } from '@/types';
+import { SupportedLanguages, Continent } from '@/types';
 
 export type Options = {
-  /**
-   * The id of the specific map you want to request.
-   */
-  map_id?: number;
-
   /**
    * Show localized texts in the specified language.
    * @default 'en'
@@ -18,11 +13,11 @@ export type Response = {
   /**
    * Dictionary of maps where the key is the map id.
    */
-  maps: Record<string, Map>;
+  continents: Record<string, Continent>;
 };
 
-export function maps(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/maps.json', {
+export function continents(options?: Options) {
+  return rfetch.get<Response>('https://api.guildwars2.com/v1/continents.json', {
     params: options,
   });
 }

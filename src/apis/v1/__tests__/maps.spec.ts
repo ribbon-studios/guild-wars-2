@@ -29,7 +29,7 @@ describe('fn(maps)', () => {
     const response = await maps();
 
     expect(Object.keys(response.maps)).length(1016);
-    expectTypeOf(response.maps).toEqualTypeOf<Record<number, Map>>();
+    expectTypeOf(response.maps).toEqualTypeOf<Record<string, Map>>();
     expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/maps.json', {
       params: undefined,
     });

@@ -6,6 +6,15 @@ describe('class(GuildWars2)', () => {
     const gw2 = new GuildWars2();
 
     expect(gw2).toHaveProperty(['v1']);
-    expect(Object.keys(gw2.v1)).toEqual(['eventDetails', 'guildDetails', 'items', 'mapNames', 'maps', 'worldNames']);
+    expect(Object.keys(gw2.v1)).toEqual([
+      'continents',
+      'eventDetails',
+      'guildDetails',
+      'itemDetails',
+      'items',
+      'mapNames',
+      'maps',
+      'worldNames',
+    ]);
   });
 });
