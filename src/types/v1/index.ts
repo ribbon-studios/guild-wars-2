@@ -8,3 +8,4 @@ export * from './lang';
 export * from './location';
 export * from './map';
 export * from './names';
+export * from './region';

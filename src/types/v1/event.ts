@@ -1,4 +1,5 @@
 import { Location } from './location';
+import { RenderServiceIcon } from './render';
 
 export enum EventFlags {
   GROUP_EVENT = 'group_event',
@@ -37,15 +38,5 @@ export type Event = {
   /**
    * The icon for the event.
    */
-  icon?: {
-    /**
-     * The file id to be used with the render service.
-     */
-    file_id: number;
-
-    /**
-     * The file signature to be used with the render service.
-     */
-    signature: string;
-  };
+  icon?: RenderServiceIcon;
 };
