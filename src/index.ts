@@ -1,4 +1,5 @@
 import * as v1 from './apis/v1';
+import * as v2 from './apis/v2';
 
 // TODO: Remove this if its never used elsewhere
 // export enum EventState {
@@ -29,5 +30,6 @@ import * as v1 from './apis/v1';
 // }
 
 export class GuildWars2 {
-  v1 = v1;
+  public v1 = v1;
+  public v2 = v2;
 }
