@@ -1,3 +1,4 @@
+export { build } from './build';
 export { continents } from './continents';
 export { eventDetails } from './eventDetails';
 export { guildDetails } from './guildDetails';
