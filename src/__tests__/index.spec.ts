@@ -11,6 +11,7 @@ describe('class(GuildWars2)', () => {
       'colors',
       'continents',
       'eventDetails',
+      'files',
       'guildDetails',
       'itemDetails',
       'items',
