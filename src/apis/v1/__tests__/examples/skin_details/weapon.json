@@ -1,0 +1,14 @@
+{
+  "skin_id": "9000",
+  "name": "Seven Reapers Mace",
+  "type": "Weapon",
+  "flags": ["ShowInWardrobe"],
+  "restrictions": [],
+  "rarity": "Basic",
+  "icon_file_id": "2212889",
+  "icon_file_signature": "ADF33CE8C4FE4E251B9524B14AE515ED3343A473",
+  "weapon": {
+    "type": "Mace",
+    "damage_type": "Physical"
+  }
+}

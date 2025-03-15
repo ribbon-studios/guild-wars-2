@@ -19,6 +19,7 @@ describe('class(GuildWars2)', () => {
       'mapFloor',
       'mapNames',
       'maps',
+      'skinDetails',
       'skins',
       'worldNames',
     ]);

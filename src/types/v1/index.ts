@@ -11,4 +11,5 @@ export * from './map';
 export * from './names';
 export * from './region';
 export * from './render';
+export * from './skin';
 export * from './wvw';
