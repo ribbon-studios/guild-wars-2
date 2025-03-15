@@ -10,4 +10,5 @@ export { items } from './items';
 export { mapFloor } from './mapFloor';
 export { mapNames } from './mapNames';
 export { maps } from './maps';
+export { skins } from './skins';
 export { worldNames } from './worldNames';
