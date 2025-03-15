@@ -7,6 +7,7 @@ describe('class(GuildWars2)', () => {
 
     expect(gw2).toHaveProperty(['v1']);
     expect(Object.keys(gw2.v1)).toEqual([
+      'wvw',
       'build',
       'colors',
       'continents',
@@ -20,5 +21,7 @@ describe('class(GuildWars2)', () => {
       'maps',
       'worldNames',
     ]);
+
+    expect(Object.keys(gw2.v1.wvw)).toEqual(['matches']);
   });
 });
