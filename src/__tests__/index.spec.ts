@@ -22,6 +22,6 @@ describe('class(GuildWars2)', () => {
       'worldNames',
     ]);
 
-    expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches']);
+    expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches', 'objectiveNames']);
   });
 });
