@@ -3,7 +3,7 @@ import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Response = {
   /**
-   * The id of the current build.
+   * The current WvW matches.
    */
   wvw_matches: WvW.Matches[];
 };
