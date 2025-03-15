@@ -1,4 +1,5 @@
 export { build } from './build';
+export { colors } from './colors';
 export { continents } from './continents';
 export { eventDetails } from './eventDetails';
 export { guildDetails } from './guildDetails';
