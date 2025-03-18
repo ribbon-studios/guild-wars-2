@@ -17,12 +17,16 @@
 ### Quick Start
 
 ```ts
-import { GuildWars2 } from '@ribbon-studios/guild-wars-2';
+import { GuildWars2, Schema } from '@ribbon-studios/guild-wars-2';
 
-const gw2 = new GuildWars2('2024-07-20T01:00:00.000Z');
+const gw2 = new GuildWars2({
+  api_key: '<my-super-secret-api-key>',
+  v: Schema.V0,
+});
 
 export async function example(token: string) {
   await gw2.v1.mapNames();
+  await gw2.v2.tokeninfo();
 }
 ```
 
