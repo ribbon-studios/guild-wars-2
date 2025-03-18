@@ -1,4 +1,4 @@
-import { GatheringType } from '@/types';
+import { GatheringType } from '@/types/v1';
 import foraging from './foraging.json';
 import logging from './logging.json';
 import mining from './mining.json';

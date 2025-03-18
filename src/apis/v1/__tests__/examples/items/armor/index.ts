@@ -1,4 +1,4 @@
-import { ArmorType } from '@/types';
+import { ArmorType } from '@/types/v1';
 import boots from './boots.json';
 import coat from './coat.json';
 import gloves from './gloves.json';

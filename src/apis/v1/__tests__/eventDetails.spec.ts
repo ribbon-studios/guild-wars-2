@@ -1,5 +1,5 @@
 import { describe, it, expect, expectTypeOf, beforeEach, vi } from 'vitest';
-import { Event } from '@/types';
+import { Event } from '@/types/v1';
 import { eventDetails } from '../eventDetails';
 import events from './examples/events.json';
 import { rfetch } from '@ribbon-studios/js-utils';

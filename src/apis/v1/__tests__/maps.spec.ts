@@ -1,5 +1,5 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
-import { Map } from '@/types';
+import { Map } from '@/types/v1';
 import { maps } from '../maps';
 import data from './examples/maps.json';
 import { rfetch } from '@ribbon-studios/js-utils';

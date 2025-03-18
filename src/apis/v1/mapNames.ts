@@ -1,4 +1,4 @@
-import { NameIdentifier, SupportedLanguages } from '@/types';
+import { NameIdentifier, SupportedLanguages } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {

@@ -1,4 +1,4 @@
-import { TrinketType } from '@/types';
+import { TrinketType } from '@/types/v1';
 import accessory from './accessory.json';
 import amulet from './amulet.json';
 import ring from './ring.json';

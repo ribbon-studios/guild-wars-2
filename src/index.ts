@@ -1,35 +1,46 @@
-import * as v1 from './apis/v1';
-import * as v2 from './apis/v2';
+import { V1 } from './apis/v1';
+import { V2 } from './apis/v2';
+import { SupportedLanguages } from './types/v1';
+import { Schema } from './types/v2';
 
-// TODO: Remove this if its never used elsewhere
-// export enum EventState {
-//   /**
-//    * The event is not running.
-//    */
-//   INACTIVE = 'Inactive',
-//   /**
-//    * The event is running now.
-//    */
-//   ACTIVE = 'Active',
-//   /**
-//    * The event has succeeded
-//    */
-//   SUCCESS = 'Success',
-//   /**
-//    * The event has failed
-//    */
-//   FAIL = 'Fail',
-//   /**
-//    * The event is inactive and waiting for certain criteria to be met before becoming `Active`
-//    */
-//   WARMUP = 'Warmup',
-//   /**
-//    * The criteria for the event to start have been met, but certain activities (such as an NPC dialogue) have not completed yet. After the activites have been completed, the event will become `Active`.
-//    */
-//   PREPARATION = 'Preparation',
-// }
+export class GuildWars2<V extends Schema = Schema.LATEST> {
+  public v1: V1;
+  public v2: V2<V>;
+  public readonly config: GuildWars2.Config<V>;
 
-export class GuildWars2 {
-  public v1 = v1;
-  public v2 = v2;
+  constructor(config?: GuildWars2.Config<V>) {
+    this.config = {
+      v: Schema.LATEST as V,
+      lang: SupportedLanguages.ENGLISH,
+      ...config,
+    };
+
+    this.v1 = new V1(this.config);
+    this.v2 = new V2(this.config);
+  }
+}
+
+export namespace GuildWars2 {
+  export type Config<V extends Schema> = Config.V1 & {
+    /**
+     * The default api key.
+     * @default undefined
+     */
+    api_key?: string;
+
+    /**
+     * The default schema version.
+     */
+    v?: V;
+  };
+
+  export namespace Config {
+    export type V1 = {
+      /**
+       * Show localized texts in the specified language.
+       * @default 'en'
+       */
+      lang?: SupportedLanguages;
+    };
+  }
 }

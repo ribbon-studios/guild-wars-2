@@ -1,4 +1,4 @@
-import { RenderServiceIcon } from '@/types';
+import { RenderServiceIcon } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Response = Record<string, RenderServiceIcon>;

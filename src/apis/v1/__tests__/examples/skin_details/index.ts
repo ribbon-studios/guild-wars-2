@@ -1,4 +1,4 @@
-import { Skin } from '@/types';
+import { Skin } from '@/types/v1';
 import armor from './armor.json';
 import weapon from './weapon.json';
 

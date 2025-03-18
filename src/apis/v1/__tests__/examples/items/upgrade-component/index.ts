@@ -1,4 +1,4 @@
-import { UpgradeComponentType } from '@/types';
+import { UpgradeComponentType } from '@/types/v1';
 import defaultComponent from './default.json';
 
 export default {

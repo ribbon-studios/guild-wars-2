@@ -1,6 +1,6 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import { guildDetails } from '../guildDetails';
-import { Guild } from '@/types';
+import { Guild } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 import prismatica from './examples/guilds/prismatica.json';
 

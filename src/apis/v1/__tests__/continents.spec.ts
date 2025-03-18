@@ -1,5 +1,5 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
-import { Continent } from '@/types';
+import { Continent } from '@/types/v1';
 import data from './examples/continents.json';
 import { rfetch } from '@ribbon-studios/js-utils';
 import { continents } from '../continents';

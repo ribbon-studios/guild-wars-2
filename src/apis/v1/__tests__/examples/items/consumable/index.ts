@@ -1,4 +1,4 @@
-import { ConsumableType } from '@/types';
+import { ConsumableType } from '@/types/v1';
 import appearanceChange from './appearance-change.json';
 import booze from './booze.json';
 import contractNPC from './contract-npc.json';

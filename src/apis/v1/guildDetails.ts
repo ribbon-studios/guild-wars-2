@@ -1,4 +1,4 @@
-import { Guild } from '@/types';
+import { Guild } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options =

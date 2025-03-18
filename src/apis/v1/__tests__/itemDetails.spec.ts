@@ -12,7 +12,7 @@ import {
   TrinketItem,
   TrinketType,
   UnlockType,
-} from '@/types';
+} from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 import data from './examples/items';
 

@@ -1,4 +1,4 @@
-import type { WvW } from '@/types';
+import type { WvW } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {

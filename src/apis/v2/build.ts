@@ -7,6 +7,12 @@ export type Response = {
   id: number;
 };
 
+/**
+ * Returns the current build id of the game.
+ * @see https://wiki.guildwars2.com/wiki/API:2/build
+ */
 export function build() {
+  console.log(this);
+
   return rfetch.get<Response>('https://api.guildwars2.com/v2/build');
 }

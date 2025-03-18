@@ -1,4 +1,4 @@
-import type { Dimension, Rectangle, Region, SupportedLanguages } from '@/types';
+import type { Dimension, Rectangle, Region, SupportedLanguages } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {

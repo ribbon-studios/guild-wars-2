@@ -1,4 +1,4 @@
-import { ItemType } from '@/types';
+import { ItemType } from '@/types/v1';
 import armor from './armor';
 import back from './back.json';
 import bag from './bag.json';

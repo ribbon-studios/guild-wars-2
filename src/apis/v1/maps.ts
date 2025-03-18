@@ -1,5 +1,5 @@
 import { rfetch } from '@ribbon-studios/js-utils';
-import { SupportedLanguages, Map } from '@/types';
+import { SupportedLanguages, Map } from '@/types/v1';
 
 export type Options = {
   /**

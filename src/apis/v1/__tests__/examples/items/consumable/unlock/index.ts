@@ -1,4 +1,4 @@
-import { UnlockType } from '@/types';
+import { UnlockType } from '@/types/v1';
 import bagSlot from './bag-slot.json';
 import bankTab from './bank-tab.json';
 import collectableCapacity from './collectible-capacity.json';

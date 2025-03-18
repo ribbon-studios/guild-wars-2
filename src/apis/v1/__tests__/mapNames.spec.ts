@@ -1,6 +1,6 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import { mapNames } from '../';
-import { NameIdentifier } from '@/types';
+import { NameIdentifier } from '@/types/v1';
 import names from './examples/names/maps.json';
 import { rfetch } from '@ribbon-studios/js-utils';
 

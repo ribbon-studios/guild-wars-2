@@ -1,5 +1,5 @@
-import { SupportedLanguages } from '@/types';
-import { Event } from '@/types';
+import { SupportedLanguages } from '@/types/v1';
+import { Event } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 export type Options = {

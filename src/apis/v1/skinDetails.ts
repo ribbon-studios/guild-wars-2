@@ -1,4 +1,4 @@
-import { SupportedLanguages } from '@/types';
+import { SupportedLanguages } from '@/types/v1';
 import { Skin } from '@/types/v1/skin';
 import { rfetch } from '@ribbon-studios/js-utils';
 
