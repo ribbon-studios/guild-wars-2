@@ -1,7 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import data from './examples/skins.json';
 import { rfetch } from '@ribbon-studios/js-utils';
-import { skins, type Response } from '../skins';
+import { type Response } from '../skins';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -13,7 +14,9 @@ describe('fn(skins)', () => {
   });
 
   it('should return all the skins', async () => {
-    const response = await skins();
+    const api = new GuildWars2();
+
+    const response = await api.v1.skins();
 
     expect(response.skins).length(9555);
     expectTypeOf(response).toEqualTypeOf<Response>();

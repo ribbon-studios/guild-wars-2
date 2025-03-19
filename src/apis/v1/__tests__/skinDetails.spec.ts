@@ -1,8 +1,9 @@
 import { describe, it, expect, expectTypeOf, vi } from 'vitest';
 import { rfetch } from '@ribbon-studios/js-utils';
-import { skinDetails, type Response } from '../skinDetails';
+import { type Response } from '../skinDetails';
 import { Skin } from '@/types/v1/skin';
 import { skin_details } from './examples/skin_details';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -15,7 +16,9 @@ describe('fn(skinDetails)', () => {
   ])('should return the skin detail for the "%s" type', async (type, id) => {
     fetchMock.get.mockResolvedValue(skin_details[type]);
 
-    const response = await skinDetails({
+    const api = new GuildWars2();
+
+    const response = await api.v1.skinDetails({
       skin_id: id,
     });
 

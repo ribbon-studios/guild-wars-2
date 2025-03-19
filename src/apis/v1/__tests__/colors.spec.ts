@@ -1,7 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import data from './examples/colors.json';
 import { rfetch } from '@ribbon-studios/js-utils';
-import { colors, type Response } from '../colors';
+import { type Response } from '../colors';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -13,7 +14,9 @@ describe('fn(build)', () => {
   });
 
   it('should return all the colors', async () => {
-    const response = await colors();
+    const api = new GuildWars2();
+
+    const response = await api.v1.colors();
 
     expectTypeOf(response).toEqualTypeOf<Response>();
     expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v1/colors.json', {

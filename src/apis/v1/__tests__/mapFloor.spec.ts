@@ -1,7 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import data from './examples/map_floors.json';
 import { rfetch } from '@ribbon-studios/js-utils';
-import { mapFloor, type Response } from '../mapFloor';
+import { type Response } from '../mapFloor';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -13,7 +14,9 @@ describe('fn(mapFloor)', () => {
   });
 
   it('should return the requested map floors', async () => {
-    const response = await mapFloor({
+    const api = new GuildWars2();
+
+    const response = await api.v1.mapFloor({
       continent_id: '1',
       floor: '1',
     });

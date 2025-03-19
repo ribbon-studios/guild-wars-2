@@ -1,8 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import { Map } from '@/types/v1';
-import { maps } from '../maps';
 import data from './examples/maps.json';
 import { rfetch } from '@ribbon-studios/js-utils';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -14,7 +14,9 @@ describe('fn(maps)', () => {
   });
 
   it('should return the requested map', async () => {
-    await maps({
+    const api = new GuildWars2();
+
+    await api.v1.maps({
       map_id: 15,
     });
 
@@ -26,7 +28,9 @@ describe('fn(maps)', () => {
   });
 
   it('should support returning all maps', async () => {
-    const response = await maps();
+    const api = new GuildWars2();
+
+    const response = await api.v1.maps();
 
     expect(Object.keys(response.maps)).length(1016);
     expectTypeOf(response.maps).toEqualTypeOf<Record<string, Map>>();

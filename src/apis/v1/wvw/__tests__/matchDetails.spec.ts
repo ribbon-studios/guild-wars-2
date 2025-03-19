@@ -1,7 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
 import data from './examples/match_details.json';
 import { rfetch } from '@ribbon-studios/js-utils';
-import { matchDetails, type Response } from '../matchDetails';
+import { type Response } from '../matchDetails';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -13,7 +14,9 @@ describe('fn(matchDetails)', () => {
   });
 
   it('should return the current matchDetails', async () => {
-    const response = await matchDetails({
+    const api = new GuildWars2();
+
+    const response = await api.v1.wvw.matchDetails({
       match_id: '1-4',
     });
 

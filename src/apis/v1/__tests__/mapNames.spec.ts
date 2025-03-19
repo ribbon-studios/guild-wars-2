@@ -1,8 +1,8 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
-import { mapNames } from '../';
 import { NameIdentifier } from '@/types/v1';
 import names from './examples/names/maps.json';
 import { rfetch } from '@ribbon-studios/js-utils';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -14,7 +14,9 @@ describe('fn(mapNames)', () => {
   });
 
   it('should return a list of the map names', async () => {
-    const names = await mapNames();
+    const api = new GuildWars2();
+
+    const names = await api.v1.mapNames();
 
     expect(names).length(1016);
     expectTypeOf(names).toEqualTypeOf<NameIdentifier[]>();

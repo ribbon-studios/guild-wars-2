@@ -1,8 +1,8 @@
 import { describe, it, expect, expectTypeOf, beforeEach, vi } from 'vitest';
 import { Event } from '@/types/v1';
-import { eventDetails } from '../eventDetails';
 import events from './examples/events.json';
 import { rfetch } from '@ribbon-studios/js-utils';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -14,7 +14,9 @@ describe('fn(eventDetails)', () => {
   });
 
   it('should return a list of the map names', async () => {
-    await eventDetails({
+    const api = new GuildWars2();
+
+    await api.v1.eventDetails({
       event_id: 'EED8A79F-B374-4AE6-BA6F-B7B98D9D7142',
     });
 
@@ -26,7 +28,9 @@ describe('fn(eventDetails)', () => {
   });
 
   it('should support returning all events', async () => {
-    const response = await eventDetails();
+    const api = new GuildWars2();
+
+    const response = await api.v1.eventDetails();
 
     expect(Object.keys(response.events)).length(5417);
     expectTypeOf(response.events).toEqualTypeOf<Record<string, Event>>();

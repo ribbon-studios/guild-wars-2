@@ -7,6 +7,7 @@ describe('class(GuildWars2)', () => {
 
     expect(gw2).toHaveProperty(['v1']);
     expect(Object.keys(gw2.v1)).toEqual([
+      'config',
       'wvw',
       'build',
       'colors',

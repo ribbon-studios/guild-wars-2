@@ -1,7 +1,7 @@
 import { describe, it, expect, expectTypeOf, vi, beforeEach } from 'vitest';
-import { items } from '../items';
 import { rfetch } from '@ribbon-studios/js-utils';
 import item_ids from './examples/item_ids.json';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -13,7 +13,9 @@ describe('fn(items)', () => {
   });
 
   it('should return a list of every item id', async () => {
-    const response = await items();
+    const api = new GuildWars2();
+
+    const response = await api.v1.items();
 
     expect(response.items).length(67809);
     expectTypeOf(response.items).toEqualTypeOf<number[]>();

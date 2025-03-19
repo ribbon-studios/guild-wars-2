@@ -1,5 +1,4 @@
 import { describe, it, expect, expectTypeOf, vi } from 'vitest';
-import { itemDetails } from '../itemDetails';
 import {
   ArmorItem,
   ArmorType,
@@ -15,6 +14,7 @@ import {
 } from '@/types/v1';
 import { rfetch } from '@ribbon-studios/js-utils';
 import data from './examples/items';
+import { GuildWars2 } from '@/index';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -24,7 +24,9 @@ describe('fn(itemDetails)', () => {
   it('should invoke the correct endpoint', async () => {
     fetchMock.get.mockResolvedValue(data[ItemType.WEAPON]);
 
-    await itemDetails({
+    const api = new GuildWars2();
+
+    await api.v1.itemDetails({
       item_id: '100',
     });
 
@@ -49,7 +51,9 @@ describe('fn(itemDetails)', () => {
     ])('should support "%s" items', async (type) => {
       fetchMock.get.mockResolvedValue(data[type]);
 
-      const item = await itemDetails({
+      const api = new GuildWars2();
+
+      const item = await api.v1.itemDetails({
         item_id: '100',
       });
 
@@ -70,7 +74,9 @@ describe('fn(itemDetails)', () => {
     ])('should support the ArmorType "%s"', async (type) => {
       fetchMock.get.mockResolvedValue(data[ItemType.ARMOR][type]);
 
-      const item = await itemDetails({
+      const api = new GuildWars2();
+
+      const item = await api.v1.itemDetails({
         item_id: '100',
       });
 
@@ -96,7 +102,9 @@ describe('fn(itemDetails)', () => {
     ])('should support the ConsumableType "%s"', async (type) => {
       fetchMock.get.mockResolvedValue(data[ItemType.CONSUMABLE][type]);
 
-      const item = await itemDetails({
+      const api = new GuildWars2();
+
+      const item = await api.v1.itemDetails({
         item_id: '100',
       });
 
@@ -118,7 +126,9 @@ describe('fn(itemDetails)', () => {
       ])('should support the UnlockType "%s"', async (type) => {
         fetchMock.get.mockResolvedValue(data[ItemType.CONSUMABLE][ConsumableType.UNLOCK][type]);
 
-        const item = await itemDetails({
+        const api = new GuildWars2();
+
+        const item = await api.v1.itemDetails({
           item_id: '100',
         });
 
@@ -135,10 +145,11 @@ describe('fn(itemDetails)', () => {
       async (type) => {
         fetchMock.get.mockResolvedValue(data[ItemType.GATHERING][type]);
 
-        const item = await itemDetails({
+        const api = new GuildWars2();
+
+        const item = await api.v1.itemDetails({
           item_id: '100',
         });
-
         expect(item.type).toEqual(ItemType.GATHERING);
         expect((item as GatheringItem).gathering.type).toEqual(type);
         expectTypeOf(item).toEqualTypeOf<Item>();
@@ -152,10 +163,11 @@ describe('fn(itemDetails)', () => {
       async (type) => {
         fetchMock.get.mockResolvedValue(data[ItemType.TRINKET][type]);
 
-        const item = await itemDetails({
+        const api = new GuildWars2();
+
+        const item = await api.v1.itemDetails({
           item_id: '100',
         });
-
         expect(item.type).toEqual(ItemType.TRINKET);
         expect((item as TrinketItem).trinket.type).toEqual(type);
         expectTypeOf(item).toEqualTypeOf<Item>();
