@@ -1,6 +1,6 @@
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { copyFileSync } from 'fs';
+import { copyFile } from 'fs/promises';
 import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 
@@ -12,7 +12,11 @@ export default defineConfig({
     outDir: './dist',
     emptyOutDir: false,
     lib: {
-      entry: [resolve(__dirname, './src/index.ts')],
+      entry: {
+        index: resolve(__dirname, './src/index.ts'),
+        v1: resolve(__dirname, './src/types/v1'),
+        v2: resolve(__dirname, './src/types/v2'),
+      },
       formats: ['es', 'cjs'],
     },
   },
@@ -34,9 +38,14 @@ export default defineConfig({
   },
   plugins: [
     dts({
+      rollupTypes: process.env.CI ? false : true,
       insertTypesEntry: true,
-      afterBuild: () => {
-        copyFileSync('dist/index.d.ts', 'dist/index.d.cts');
+      afterBuild: async () => {
+        await Promise.all([
+          copyFile('dist/index.d.ts', 'dist/index.d.cts'),
+          copyFile('dist/v1.d.ts', 'dist/v1.d.cts'),
+          copyFile('dist/v2.d.ts', 'dist/v2.d.cts'),
+        ]);
       },
     }),
   ],
