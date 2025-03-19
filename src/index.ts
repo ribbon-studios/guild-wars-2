@@ -29,7 +29,7 @@ export namespace GuildWars2 {
      * The default api key.
      * @default undefined
      */
-    api_key?: string;
+    access_token?: string;
 
     /**
      * The default schema version.

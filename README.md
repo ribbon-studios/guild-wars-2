@@ -20,7 +20,7 @@
 import { GuildWars2, Schema } from '@ribbon-studios/guild-wars-2';
 
 const gw2 = new GuildWars2({
-  api_key: '<my-super-secret-api-key>',
+  access_token: '<my-super-secret-api-key>',
   v: Schema.V0,
 });
 

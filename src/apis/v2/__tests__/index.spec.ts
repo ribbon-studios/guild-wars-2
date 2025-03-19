@@ -26,7 +26,7 @@ describe('class(V2)', () => {
       const v2 = new V2({
         v: Schema.V11,
         lang: SupportedLanguages.ENGLISH,
-        api_key: expectedToken,
+        access_token: expectedToken,
       });
 
       await v2.fetch('/v2/test.json', {
@@ -51,7 +51,7 @@ describe('class(V2)', () => {
       const v2 = new V2({
         v: Schema.V11,
         lang: SupportedLanguages.ENGLISH,
-        api_key: expectedToken,
+        access_token: expectedToken,
       });
 
       await v2.fetch('/v2/test.json', {
@@ -74,7 +74,7 @@ describe('class(V2)', () => {
       const v2 = new V2({
         v: Schema.V11,
         lang: SupportedLanguages.ENGLISH,
-        api_key: 'my-main-token',
+        access_token: 'my-main-token',
       });
 
       await v2.fetch('/v2/test.json', {

@@ -18,17 +18,17 @@ export class V2<V extends Schema> implements V2.API<V> {
     };
 
     if (token) {
-      const api_key =
-        typeof options?.params?.access_token === 'string' ? options?.params?.access_token : this.config.api_key;
+      const access_token =
+        typeof options?.params?.access_token === 'string' ? options?.params?.access_token : this.config.access_token;
 
       if (typeof process === 'object') {
         rfetchOptions.headers = {
-          Authorization: `Bearer ${api_key}`,
+          Authorization: `Bearer ${access_token}`,
           ...rfetchOptions.headers,
         };
       } else {
         rfetchOptions.params = {
-          access_token: api_key,
+          access_token,
           ...rfetchOptions.params,
         };
       }
