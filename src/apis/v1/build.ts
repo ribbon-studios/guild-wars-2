@@ -1,4 +1,4 @@
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Response = {
   /**
@@ -7,6 +7,6 @@ export type Response = {
   build_id: number;
 };
 
-export function build() {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/build.json');
+export function build(this: V1.API) {
+  return this.fetch<Response>('/v1/build.json');
 }

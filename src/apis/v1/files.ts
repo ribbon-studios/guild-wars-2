@@ -1,8 +1,8 @@
 import { RenderServiceIcon } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Response = Record<string, RenderServiceIcon>;
 
-export function files() {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/files.json');
+export function files(this: V1.API) {
+  return this.fetch<Response>('/v1/files.json');
 }

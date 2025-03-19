@@ -1,5 +1,5 @@
-import { rfetch } from '@ribbon-studios/js-utils';
 import { SupportedLanguages, Map } from '@/types/v1';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -21,8 +21,8 @@ export type Response = {
   maps: Record<string, Map>;
 };
 
-export function maps(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/maps.json', {
+export function maps(this: V1.API, options?: Options) {
+  return this.fetch<Response>('/v1/maps.json', {
     params: options,
   });
 }

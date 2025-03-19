@@ -1,6 +1,6 @@
 import { SupportedLanguages } from '@/types/v1';
 import { Skin } from '@/types/v1/skin';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -17,8 +17,8 @@ export type Options = {
 
 export type Response = Skin;
 
-export function skinDetails(options: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/skin_details.json', {
+export function skinDetails(this: V1.API, options: Options) {
+  return this.fetch<Response>('/v1/skin_details.json', {
     params: options,
   });
 }

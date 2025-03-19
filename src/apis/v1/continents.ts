@@ -1,5 +1,5 @@
-import { rfetch } from '@ribbon-studios/js-utils';
 import { SupportedLanguages, Continent } from '@/types/v1';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -16,8 +16,8 @@ export type Response = {
   continents: Record<string, Continent>;
 };
 
-export function continents(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/continents.json', {
+export function continents(this: V1.API, options?: Options) {
+  return this.fetch<Response>('/v1/continents.json', {
     params: options,
   });
 }

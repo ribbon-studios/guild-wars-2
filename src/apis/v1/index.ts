@@ -15,11 +15,24 @@ import { maps } from './maps';
 import { skinDetails } from './skinDetails';
 import { skins } from './skins';
 import { worldNames } from './worldNames';
+import { bind } from '@/utils';
+import { rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
 
-export class V1 {
+export class V1 implements V1.API {
   constructor(protected config: GuildWars2.Config.V1) {}
 
-  wvw = wvw;
+  async fetch<T>(endpoint: string, options?: RibbonFetchBasicOptions): Promise<T> {
+    const url = new URL(endpoint, 'https://api.guildwars2.com');
+
+    if (options && Object.keys(options).length > 0) {
+      return rfetch.get<T>(url.toString(), options);
+    }
+
+    return rfetch.get<T>(url.toString());
+  }
+
+  wvw = bind(wvw, this as V1.API);
+
   build = build;
   colors = colors;
   continents = continents;
@@ -34,4 +47,10 @@ export class V1 {
   skinDetails = skinDetails;
   skins = skins;
   worldNames = worldNames;
+}
+
+export namespace V1 {
+  export interface API {
+    fetch<T>(endpoint: string, options?: RibbonFetchBasicOptions): Promise<T>;
+  }
 }

@@ -1,5 +1,5 @@
 import type { Dimension, Rectangle, Region, SupportedLanguages } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -25,8 +25,8 @@ export type Response = {
   regions: Record<string, Region>;
 };
 
-export function mapFloor(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/map_floor.json', {
+export function mapFloor(this: V1.API, options?: Options) {
+  return this.fetch<Response>('/v1/map_floor.json', {
     params: options,
   });
 }

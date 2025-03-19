@@ -4,34 +4,37 @@ import { build } from './build';
 import { tokeninfo } from './tokeninfo';
 import { rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
 
-export class V2<V extends Schema> {
-  constructor(protected config: GuildWars2.Config<V>) {}
+export class V2<V extends Schema> implements V2.API<V> {
+  constructor(public config: GuildWars2.InternalConfig<V>) {}
 
-  async fetch<T>(url: string, options?: V2.FetchOptions): Promise<T> {
-    const headers = options?.headers ?? {};
-    const params = {
-      // Verify all types are accurate before bumping this version!
-      v: Schema.V11,
-      ...options?.params,
+  async fetch<T>(endpoint: string, { token, ...options }: V2.FetchOptions = {}): Promise<T> {
+    const url = new URL(endpoint, 'https://api.guildwars2.com');
+    const rfetchOptions: RibbonFetchBasicOptions = {
+      ...options,
+      params: {
+        v: this.config.v,
+        ...options?.params,
+      },
     };
 
-    if (options.token) {
+    if (token) {
       const api_key =
         typeof options?.params?.access_token === 'string' ? options?.params?.access_token : this.config.api_key;
 
       if (typeof process === 'object') {
-        headers['Authorization'] = `Bearer ${api_key}`;
-        delete params['access_token'];
+        rfetchOptions.headers = {
+          Authorization: `Bearer ${api_key}`,
+          ...rfetchOptions.headers,
+        };
       } else {
-        params['access_token'] = api_key;
-        delete headers['Authorization'];
+        rfetchOptions.params = {
+          access_token: api_key,
+          ...rfetchOptions.params,
+        };
       }
     }
 
-    return rfetch.get<T>(url, {
-      params,
-      headers,
-    });
+    return rfetch.get<T>(url.toString(), rfetchOptions);
   }
 
   build = build;
@@ -39,6 +42,12 @@ export class V2<V extends Schema> {
 }
 
 export namespace V2 {
+  export interface API<V extends Schema> {
+    config: GuildWars2.InternalConfig<V>;
+
+    fetch<T>(endpoint: string, options?: V2.FetchOptions): Promise<T>;
+  }
+
   export type FetchOptions = {
     token?: boolean;
     schema?: Schema;

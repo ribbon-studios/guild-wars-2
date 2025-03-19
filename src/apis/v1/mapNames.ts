@@ -1,5 +1,5 @@
 import { NameIdentifier, SupportedLanguages } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -9,8 +9,8 @@ export type Options = {
   lang?: SupportedLanguages;
 };
 
-export function mapNames(options?: Options) {
-  return rfetch.get<NameIdentifier[]>('https://api.guildwars2.com/v1/map_names.json', {
+export function mapNames(this: V1.API, options?: Options) {
+  return this.fetch<NameIdentifier[]>('/v1/map_names.json', {
     params: options,
   });
 }

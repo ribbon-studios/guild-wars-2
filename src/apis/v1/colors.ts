@@ -1,5 +1,5 @@
 import type { SupportedLanguages, Color } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -13,8 +13,8 @@ export type Response = {
   colors: Record<string, Color>;
 };
 
-export function colors(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/colors.json', {
+export function colors(this: V1.API, options?: Options) {
+  return this.fetch<Response>('/v1/colors.json', {
     params: options,
   });
 }

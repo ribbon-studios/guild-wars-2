@@ -29,7 +29,7 @@ export default defineConfig({
     coverage: {
       reporter: [process.env.CI ? 'text-summary' : 'text', 'lcovonly'],
       include: ['src/**'],
-      exclude: ['src/types', 'src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+      exclude: ['src/types', 'src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}', 'src/playground.ts'],
     },
   },
   plugins: [

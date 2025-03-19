@@ -1,5 +1,5 @@
 import { Guild } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options =
   | {
@@ -15,8 +15,8 @@ export type Options =
       guild_name: string;
     };
 
-export function guildDetails(options?: Options) {
-  return rfetch.get<Guild>('https://api.guildwars2.com/v1/guild_details.json', {
+export function guildDetails(this: V1.API, options?: Options) {
+  return this.fetch<Guild>('/v1/guild_details.json', {
     params: options,
   });
 }

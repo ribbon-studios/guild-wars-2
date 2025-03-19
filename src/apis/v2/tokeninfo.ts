@@ -21,8 +21,8 @@ export type Responses = SchemaResponse<{
 /**
  * Returns information about the api key.
  */
-export function tokeninfo<V extends Schema, O extends Schema = V>(this: V2<V>, options?: Options<O>) {
-  return this.fetch<Responses[O]>('https://api.guildwars2.com/v2/tokeninfo', {
+export function tokeninfo<V extends Schema, O extends Schema = V>(this: V2.API<V>, options?: Options<O>) {
+  return this.fetch<Responses[O]>('/v2/tokeninfo', {
     token: true,
     params: options,
   });

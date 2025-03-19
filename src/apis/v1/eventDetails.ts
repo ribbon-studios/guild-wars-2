@@ -1,6 +1,6 @@
 import { SupportedLanguages } from '@/types/v1';
 import { Event } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Options = {
   /**
@@ -22,8 +22,8 @@ export type Response = {
   events: Record<string, Event>;
 };
 
-export function eventDetails(options?: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/event_details.json', {
+export function eventDetails(this: V1.API, options?: Options) {
+  return this.fetch<Response>('/v1/event_details.json', {
     params: options,
   });
 }

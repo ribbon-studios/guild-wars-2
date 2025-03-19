@@ -1,5 +1,5 @@
 import type { WvW } from '@/types/v1';
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '..';
 
 export type Options = {
   /**
@@ -10,8 +10,11 @@ export type Options = {
 
 export type Response = WvW.MatchDetails;
 
-export function matchDetails(options: Options) {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/wvw/match_details.json', {
+/**
+ * This is a test
+ */
+export function matchDetails(this: V1.API, options: Options) {
+  return this.fetch<Response>('/v1/wvw/match_details.json', {
     params: options,
   });
 }

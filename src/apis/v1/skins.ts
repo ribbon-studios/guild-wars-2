@@ -1,4 +1,4 @@
-import { rfetch } from '@ribbon-studios/js-utils';
+import type { V1 } from '.';
 
 export type Response = {
   /**
@@ -7,6 +7,6 @@ export type Response = {
   skins: number[];
 };
 
-export function skins() {
-  return rfetch.get<Response>('https://api.guildwars2.com/v1/skins.json');
+export function skins(this: V1.API) {
+  return this.fetch<Response>('/v1/skins.json');
 }

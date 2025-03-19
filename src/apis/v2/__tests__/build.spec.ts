@@ -3,6 +3,7 @@ import data from './examples/build.json';
 import { type Response } from '../build';
 import { rfetch } from '@ribbon-studios/js-utils';
 import { GuildWars2 } from '@/index';
+import { Schema } from '@/types/v2';
 
 vi.mock('@ribbon-studios/js-utils');
 
@@ -19,7 +20,11 @@ describe('fn(build)', () => {
     const response = await api.v2.build();
 
     expect(response.id).toEqual(115267);
-    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/build');
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/build', {
+      params: {
+        v: Schema.LATEST,
+      },
+    });
     expectTypeOf(response).toEqualTypeOf<Response>();
   });
 });
