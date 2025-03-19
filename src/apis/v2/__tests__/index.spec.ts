@@ -59,7 +59,6 @@ describe('class(V2)', () => {
       });
 
       expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/test.json', {
-        mode: 'cors',
         params: {
           access_token: expectedToken,
           v: Schema.V11,
@@ -86,7 +85,6 @@ describe('class(V2)', () => {
       });
 
       expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/test.json', {
-        mode: 'cors',
         params: {
           access_token: expectedToken,
           v: Schema.V11,

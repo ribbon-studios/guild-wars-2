@@ -24,11 +24,6 @@ export class V1 implements V1.API {
   async fetch<T>(endpoint: string, options: RibbonFetchBasicOptions = {}): Promise<T> {
     const url = new URL(endpoint, 'https://api.guildwars2.com');
 
-    // If we're running in a browser then bypass the OPTIONS call
-    if (typeof process !== 'object') {
-      options.mode = 'cors';
-    }
-
     if (Object.keys(options).length > 0) {
       return rfetch.get<T>(url.toString(), options);
     }
