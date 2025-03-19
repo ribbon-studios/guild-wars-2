@@ -5,3 +5,4 @@ coverage/
 dist/
 playground.ts
 playground.json
+tsconfig.tsbuildinfo

@@ -18,6 +18,12 @@
         "types": "./dist/index.d.cts",
         "default": "./dist/index.cjs"
       }
+    },
+    "./v1": {
+      "types": "./dist/types/v1/index.d.ts"
+    },
+    "./v2": {
+      "types": "./dist/types/v2/index.d.ts"
     }
   },
   "scripts": {
@@ -44,7 +50,8 @@
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.0",
     "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3"
+    "vite-plugin-dts": "^4.5.3",
+    "vue-tsc": "^2.2.8"
   },
   "publishConfig": {
     "access": "public"

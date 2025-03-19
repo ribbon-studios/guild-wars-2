@@ -47,3 +47,5 @@ export namespace GuildWars2 {
     };
   }
 }
+
+export { Schema, SupportedLanguages };
