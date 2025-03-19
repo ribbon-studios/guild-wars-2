@@ -14,8 +14,8 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(__dirname, './src/index.ts'),
-        v1: resolve(__dirname, './src/types/v1'),
-        v2: resolve(__dirname, './src/types/v2'),
+        v1: resolve(__dirname, './src/types/v1/index.ts'),
+        v2: resolve(__dirname, './src/types/v2/index.ts'),
       },
       formats: ['es', 'cjs'],
     },
@@ -38,14 +38,9 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      rollupTypes: process.env.CI ? false : true,
       insertTypesEntry: true,
       afterBuild: async () => {
-        await Promise.all([
-          copyFile('dist/index.d.ts', 'dist/index.d.cts'),
-          copyFile('dist/v1.d.ts', 'dist/v1.d.cts'),
-          copyFile('dist/v2.d.ts', 'dist/v2.d.cts'),
-        ]);
+        await Promise.all([copyFile('dist/index.d.ts', 'dist/index.d.cts')]);
       },
     }),
   ],
