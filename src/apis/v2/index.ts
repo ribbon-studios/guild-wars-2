@@ -27,6 +27,8 @@ export class V2<V extends Schema> implements V2.API<V> {
           ...rfetchOptions.headers,
         };
       } else {
+        // If we're running in a browser then bypass the OPTIONS call
+        rfetchOptions.mode = 'cors';
         rfetchOptions.params = {
           access_token,
           ...rfetchOptions.params,

@@ -21,10 +21,15 @@ import { rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
 export class V1 implements V1.API {
   constructor(protected config: GuildWars2.Config.V1) {}
 
-  async fetch<T>(endpoint: string, options?: RibbonFetchBasicOptions): Promise<T> {
+  async fetch<T>(endpoint: string, options: RibbonFetchBasicOptions = {}): Promise<T> {
     const url = new URL(endpoint, 'https://api.guildwars2.com');
 
-    if (options && Object.keys(options).length > 0) {
+    // If we're running in a browser then bypass the OPTIONS call
+    if (typeof process !== 'object') {
+      options.mode = 'cors';
+    }
+
+    if (Object.keys(options).length > 0) {
       return rfetch.get<T>(url.toString(), options);
     }
 
