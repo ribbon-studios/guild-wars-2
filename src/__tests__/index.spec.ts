@@ -4,10 +4,11 @@ import { Schema } from '@/types/v2';
 import { SupportedLanguages } from '@/types/v1';
 
 describe('class(GuildWars2)', () => {
-  it('should have all of the apis', () => {
+  it('should have all of the v1 apis', () => {
     const gw2 = new GuildWars2();
 
-    expect(gw2).toHaveProperty(['v1']);
+    expect(Object.keys(gw2)).toEqual(['config', 'v1', 'v2']);
+
     expect(Object.keys(gw2.v1)).toEqual([
       'config',
       'wvw',
@@ -26,8 +27,10 @@ describe('class(GuildWars2)', () => {
       'skins',
       'worldNames',
     ]);
-
     expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches', 'objectiveNames']);
+
+    expect(Object.keys(gw2.v2)).toEqual(['config', 'achievements', 'build', 'tokeninfo']);
+    expect(Object.keys(gw2.v2.achievements)).toEqual(['list']);
   });
 
   it('should set default config values', () => {
