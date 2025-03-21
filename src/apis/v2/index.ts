@@ -1,6 +1,9 @@
 import { DelimiterType, rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
 import type { GuildWars2, SupportedLanguages } from '@/index';
 import { Schema } from '@/types/v2';
+import { bind } from '@/utils';
+
+import * as achievements from './achievements';
 
 import { build } from './build';
 import { tokeninfo } from './tokeninfo';
@@ -10,7 +13,7 @@ export class V2<V extends Schema> implements V2.API<V> {
     rfetch.delimiters(DelimiterType.COMMA);
   }
 
-  async fetch<T>(endpoint: string, { token, ...options }: V2.FetchOptions = {}): Promise<T> {
+  async fetch<T>(endpoint: string, options?: V2.FetchOptions): Promise<T> {
     const url = new URL(endpoint, 'https://api.guildwars2.com');
     const rfetchOptions: RibbonFetchBasicOptions = {
       ...options,
@@ -20,10 +23,10 @@ export class V2<V extends Schema> implements V2.API<V> {
       },
     };
 
-    if (token) {
-      const access_token =
-        typeof options?.params?.access_token === 'string' ? options?.params?.access_token : this.config.access_token;
+    const access_token =
+      typeof options?.params?.access_token === 'string' ? options?.params?.access_token : this.config.access_token;
 
+    if (access_token) {
       if (typeof process === 'object') {
         rfetchOptions.headers = {
           Authorization: `Bearer ${access_token}`,
@@ -40,6 +43,8 @@ export class V2<V extends Schema> implements V2.API<V> {
     return rfetch.get<T>(url.toString(), rfetchOptions);
   }
 
+  achievements = bind(achievements, this as V2.API<V>);
+
   build = build;
   tokeninfo = tokeninfo;
 }
@@ -51,9 +56,7 @@ export namespace V2 {
     fetch<T>(endpoint: string, options?: V2.FetchOptions): Promise<T>;
   }
 
-  export type FetchOptions = {
-    token?: boolean;
-  } & Pick<RibbonFetchBasicOptions, 'params' | 'headers'>;
+  export type FetchOptions = Pick<RibbonFetchBasicOptions, 'params' | 'headers'>;
 
   type SchemaOptions<V extends Schema> = {
     /**

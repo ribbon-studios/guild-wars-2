@@ -29,9 +29,7 @@ describe('class(V2)', () => {
         access_token: expectedToken,
       });
 
-      await v2.fetch('/v2/test.json', {
-        token: true,
-      });
+      await v2.fetch('/v2/test.json');
 
       expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/test.json', {
         params: {
@@ -54,9 +52,7 @@ describe('class(V2)', () => {
         access_token: expectedToken,
       });
 
-      await v2.fetch('/v2/test.json', {
-        token: true,
-      });
+      await v2.fetch('/v2/test.json');
 
       expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/test.json', {
         params: {
@@ -78,7 +74,6 @@ describe('class(V2)', () => {
       });
 
       await v2.fetch('/v2/test.json', {
-        token: true,
         params: {
           access_token: expectedToken,
         },

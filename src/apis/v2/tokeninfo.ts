@@ -18,7 +18,6 @@ export type Responses = SchemaTypes<{
  */
 export function tokeninfo<V extends Schema, O extends Schema = V>(this: V2.API<V>, options?: Options<O>) {
   return this.fetch<Responses[O]>('/v2/tokeninfo', {
-    token: true,
     params: options,
   });
 }
