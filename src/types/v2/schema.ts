@@ -94,10 +94,8 @@ type PreviousSchemaMap = {
 
 export type PreviousSchema<T extends Schema> = T extends keyof PreviousSchemaMap ? PreviousSchemaMap[T] : never;
 
-export type SchemaResponseValue<T, K extends Schema> = K extends keyof T
-  ? T[K]
-  : SchemaResponseValue<T, PreviousSchema<K>>;
+export type SchemaTypeValue<T, K extends Schema> = K extends keyof T ? T[K] : SchemaTypeValue<T, PreviousSchema<K>>;
 
-export type SchemaResponse<T> = {
-  [K in Schema]: SchemaResponseValue<T, K>;
+export type SchemaTypes<T> = {
+  [K in Schema]: SchemaTypeValue<T, K>;
 };

@@ -1,19 +1,14 @@
-import { Schema, SchemaResponse, TokenInfo } from '@/types/v2';
+import { Schema, SchemaTypes, TokenInfo } from '@/types/v2';
 import type { V2 } from '.';
 
-export type Options<V extends Schema> = {
+export type Options<V extends Schema> = V2.Options<V> & {
   /**
    * The API Key.
    */
   access_token?: string;
-
-  /**
-   * The schema version.
-   */
-  v?: V;
 };
 
-export type Responses = SchemaResponse<{
+export type Responses = SchemaTypes<{
   [Schema.V0]: TokenInfo.V0;
   [Schema.V4]: TokenInfo.V1;
 }>;
