@@ -1,11 +1,16 @@
-import type { GuildWars2 } from '@/index';
+import { DelimiterType, rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
+import type { GuildWars2, SupportedLanguages } from '@/index';
 import { Schema } from '@/types/v2';
+import { bind } from '@/utils';
+
+import * as characters from './characters';
 import { build } from './build';
 import { tokeninfo } from './tokeninfo';
-import { rfetch, RibbonFetchBasicOptions } from '@ribbon-studios/js-utils';
 
 export class V2<V extends Schema> implements V2.API<V> {
-  constructor(public config: GuildWars2.InternalConfig<V>) {}
+  constructor(public config: GuildWars2.InternalConfig<V>) {
+    rfetch.delimiters(DelimiterType.COMMA);
+  }
 
   async fetch<T>(endpoint: string, { token, ...options }: V2.FetchOptions = {}): Promise<T> {
     const url = new URL(endpoint, 'https://api.guildwars2.com');
@@ -37,6 +42,8 @@ export class V2<V extends Schema> implements V2.API<V> {
     return rfetch.get<T>(url.toString(), rfetchOptions);
   }
 
+  characters = bind(characters, this as V2.API<V>);
+
   build = build;
   tokeninfo = tokeninfo;
 }
@@ -50,6 +57,24 @@ export namespace V2 {
 
   export type FetchOptions = {
     token?: boolean;
-    schema?: Schema;
   } & Pick<RibbonFetchBasicOptions, 'params' | 'headers'>;
+
+  type SchemaOptions<V extends Schema> = {
+    /**
+     * The schema version.
+     */
+    v?: V;
+  };
+
+  type SchemaOptionsWithLang<V extends Schema> = SchemaOptions<V> & {
+    /**
+     * Show localized texts in the specified language.
+     * @default 'en'
+     */
+    lang?: SupportedLanguages;
+  };
+
+  export type Options<V extends Schema, WithLang extends boolean = false> = WithLang extends true
+    ? SchemaOptionsWithLang<V>
+    : SchemaOptions<V>;
 }

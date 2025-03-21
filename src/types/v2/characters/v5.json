@@ -1,0 +1,997 @@
+[
+  {
+    "active_build_tab": 1,
+    "active_equipment_tab": 1,
+    "age": 2489422,
+    "backstory": ["12-74", "11-72", "10-68", "186-159", "7-53"],
+    "bags": [
+      {
+        "id": 8932,
+        "inventory": [
+          {
+            "binding": "Account",
+            "count": 250,
+            "id": 46731
+          },
+          {
+            "binding": "Account",
+            "count": 250,
+            "id": 46731
+          },
+          {
+            "binding": "Account",
+            "count": 199,
+            "id": 46731
+          },
+          {
+            "binding": "Account",
+            "count": 133,
+            "id": 46733
+          },
+          {
+            "binding": "Account",
+            "count": 65,
+            "id": 46735
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 67895
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 3,
+            "id": 80324
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 2,
+            "id": 19552
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 11,
+            "id": 80109
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 2,
+            "id": 19553
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "id": 70093
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 2,
+            "id": 19574
+          },
+          null,
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "id": 19620
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 9,
+            "id": 19548
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 6,
+            "id": 19615
+          },
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 20
+      },
+      {
+        "id": 98989,
+        "inventory": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 20
+      },
+      {
+        "id": 98931,
+        "inventory": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 24
+      },
+      {
+        "id": 85290,
+        "inventory": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 20
+      },
+      {
+        "id": 98300,
+        "inventory": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 20
+      },
+      {
+        "id": 87217,
+        "inventory": [
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 92014
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "id": 92237
+          },
+          {
+            "count": 8,
+            "id": 43363
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 43707
+          },
+          {
+            "binding": "Account",
+            "count": 2,
+            "id": 20005
+          },
+          {
+            "binding": "Account",
+            "count": 2,
+            "id": 66608
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 84335
+          },
+          {
+            "binding": "Account",
+            "count": 25,
+            "id": 19983
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 35991
+          },
+          {
+            "binding": "Account",
+            "count": 2,
+            "id": 19992
+          },
+          {
+            "binding": "Account",
+            "count": 2,
+            "id": 19984
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 20000
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 43765
+          },
+          {
+            "binding": "Account",
+            "count": 2,
+            "id": 45176
+          },
+          {
+            "binding": "Account",
+            "count": 7,
+            "id": 45175
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "size": 24
+      },
+      {
+        "id": 9579,
+        "inventory": [
+          {
+            "count": 90,
+            "id": 12416
+          },
+          {
+            "count": 48,
+            "id": 9443
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [1274, 345, 456, 1],
+            "id": 48653,
+            "skin": 300
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [1274, 345, 456, 1],
+            "id": 11103,
+            "skin": 314
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 88023
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 90064
+          },
+          {
+            "binding": "Account",
+            "count": 6,
+            "id": 84196
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 81781
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 81780
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 81806
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [1274, 345, 456, 1],
+            "id": 48639,
+            "skin": 305
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [1274, 345, 456, 1],
+            "id": 11348
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [123, 345, 109, 1],
+            "id": 11229,
+            "skin": 302
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "count": 1,
+            "dyes": [47, 345, 1, 1],
+            "id": 48646,
+            "skin": 6896
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 66999
+          },
+          {
+            "binding": "Account",
+            "count": 1,
+            "id": 69887
+          },
+          {
+            "binding": "Account",
+            "count": 53,
+            "id": 50069
+          },
+          {
+            "binding": "Account",
+            "count": 203,
+            "id": 50030
+          }
+        ],
+        "size": 18
+      }
+    ],
+    "build_tabs": [
+      {
+        "build": {
+          "aquatic_skills": {
+            "elite": 5534,
+            "heal": 21656,
+            "utilities": [5539, 5638, 5542]
+          },
+          "name": "Power Weaver",
+          "profession": "Elementalist",
+          "skills": {
+            "elite": 43638,
+            "heal": 5503,
+            "utilities": [40183, 5734, 45746]
+          },
+          "specializations": [
+            {
+              "id": 41,
+              "traits": [232, 214, 1503]
+            },
+            {
+              "id": 37,
+              "traits": [266, 257, 238]
+            },
+            {
+              "id": 56,
+              "traits": [2115, 2061, 2131]
+            }
+          ]
+        },
+        "is_active": true,
+        "tab": 1
+      },
+      {
+        "build": {
+          "aquatic_skills": {
+            "elite": null,
+            "heal": 5503,
+            "utilities": [null, null, null]
+          },
+          "name": "",
+          "profession": "Elementalist",
+          "skills": {
+            "elite": 5516,
+            "heal": 5569,
+            "utilities": [5539, 5734, 40183]
+          },
+          "specializations": [
+            {
+              "id": 17,
+              "traits": [348, 358, 362]
+            },
+            {
+              "id": 37,
+              "traits": [1487, 257, 238]
+            },
+            {
+              "id": 56,
+              "traits": [2177, 2170, 2138]
+            }
+          ]
+        },
+        "is_active": false,
+        "tab": 2
+      },
+      {
+        "build": {
+          "aquatic_skills": {
+            "elite": 5534,
+            "heal": 21656,
+            "utilities": [5542, 5638, 5535]
+          },
+          "name": "",
+          "profession": "Elementalist",
+          "skills": {
+            "elite": 5516,
+            "heal": 5569,
+            "utilities": [40183, 5734, 5624]
+          },
+          "specializations": [
+            {
+              "id": 31,
+              "traits": [296, 325, 1510]
+            },
+            {
+              "id": 41,
+              "traits": [232, 214, 226]
+            },
+            {
+              "id": 56,
+              "traits": [2177, 2061, 2131]
+            }
+          ]
+        },
+        "is_active": false,
+        "tab": 3
+      }
+    ],
+    "build_tabs_unlocked": 3,
+    "crafting": [
+      {
+        "active": true,
+        "discipline": "Artificer",
+        "rating": 454
+      },
+      {
+        "active": true,
+        "discipline": "Jeweler",
+        "rating": 400
+      },
+      {
+        "active": true,
+        "discipline": "Tailor",
+        "rating": 474
+      },
+      {
+        "active": true,
+        "discipline": "Weaponsmith",
+        "rating": 500
+      }
+    ],
+    "created": "2014-12-16T22:38:00Z",
+    "deaths": 1045,
+    "equipment": [
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 47874,
+        "location": "Equipped",
+        "slot": "HelmAquatic",
+        "tabs": [1],
+        "upgrades": [24685]
+      },
+      {
+        "binding": "Account",
+        "dyes": [48, 345, 345, 345],
+        "id": 67004,
+        "location": "Equipped",
+        "skin": 11118,
+        "slot": "Backpack",
+        "stats": {
+          "attributes": {
+            "CritDamage": 27,
+            "Power": 52,
+            "Precision": 52,
+            "Vitality": 27
+          },
+          "id": 1263
+        },
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "dyes": [1274, 345, 456, null],
+        "id": 91015,
+        "location": "Equipped",
+        "skin": 305,
+        "slot": "Coat",
+        "stats": {
+          "attributes": {
+            "CritDamage": 67,
+            "Power": 121,
+            "Precision": 121,
+            "Vitality": 67
+          },
+          "id": 1231
+        },
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "dyes": [123, 345, 456, null],
+        "id": 74879,
+        "location": "Equipped",
+        "skin": 314,
+        "slot": "Boots",
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "dyes": [123, 456, 109, null],
+        "id": 75971,
+        "location": "Equipped",
+        "skin": 302,
+        "slot": "Gloves",
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "dyes": [null, null, null, null],
+        "id": 71494,
+        "location": "Equipped",
+        "skin": 5746,
+        "slot": "Helm",
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "dyes": [1274, 345, 456, null],
+        "id": 73643,
+        "location": "Equipped",
+        "skin": 300,
+        "slot": "Leggings",
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 73043,
+        "location": "Equipped",
+        "slot": "Shoulders",
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "id": 68532,
+        "location": "Equipped",
+        "slot": "Accessory1",
+        "stats": {
+          "attributes": {
+            "Power": 53,
+            "Precision": 53,
+            "Toughness": 75
+          },
+          "id": 158
+        },
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "id": 67896,
+        "location": "Equipped",
+        "slot": "Accessory2",
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "id": 67906,
+        "location": "Equipped",
+        "slot": "Ring1",
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "id": 67905,
+        "location": "Equipped",
+        "slot": "Ring2",
+        "tabs": [1]
+      },
+      {
+        "binding": "Account",
+        "id": 67900,
+        "location": "Equipped",
+        "slot": "Amulet",
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 46009,
+        "location": "Equipped",
+        "slot": "WeaponAquaticA",
+        "tabs": [1],
+        "upgrades": [24548, 24570]
+      },
+      {
+        "binding": "Account",
+        "id": 80710,
+        "location": "Equipped",
+        "slot": "WeaponA1",
+        "stats": {
+          "attributes": {
+            "CritDamage": 90,
+            "Power": 90,
+            "Precision": 125
+          },
+          "id": 753
+        },
+        "tabs": [1]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 26152,
+        "location": "Equipped",
+        "skin": 7693,
+        "slot": "WeaponA2",
+        "tabs": [1],
+        "upgrades": [24601]
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 27485,
+        "location": "Equipped",
+        "skin": 7643,
+        "slot": "WeaponB1",
+        "tabs": [1],
+        "upgrades": [24570, 24601]
+      },
+      {
+        "binding": "Account",
+        "id": 67032,
+        "location": "Equipped",
+        "slot": "Sickle"
+      },
+      {
+        "binding": "Account",
+        "id": 67030,
+        "location": "Equipped",
+        "slot": "Axe"
+      },
+      {
+        "binding": "Account",
+        "id": 48933,
+        "location": "Equipped",
+        "slot": "Pick"
+      },
+      {
+        "binding": "Account",
+        "id": 97730,
+        "location": "Equipped",
+        "slot": "FishingRod"
+      },
+      {
+        "binding": "Character",
+        "bound_to": "Nevii Sonar",
+        "id": 100947,
+        "location": "Equipped",
+        "slot": "Relic"
+      }
+    ],
+    "equipment_pvp": {
+      "amulet": 31,
+      "rune": 21215,
+      "sigils": [21150, null, 21152, null]
+    },
+    "equipment_tabs": [
+      {
+        "equipment": [
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "id": 47874,
+            "location": "Equipped",
+            "slot": "HelmAquatic",
+            "upgrades": [24685]
+          },
+          {
+            "binding": "Account",
+            "dyes": [1274, 345, 456, null],
+            "id": 91015,
+            "location": "Equipped",
+            "skin": 305,
+            "slot": "Coat"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "dyes": [123, 345, 456, null],
+            "id": 74879,
+            "location": "Equipped",
+            "skin": 314,
+            "slot": "Boots"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "dyes": [123, 456, 109, null],
+            "id": 75971,
+            "location": "Equipped",
+            "skin": 302,
+            "slot": "Gloves"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "dyes": [null, null, null, null],
+            "id": 71494,
+            "location": "Equipped",
+            "skin": 5746,
+            "slot": "Helm"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "dyes": [1274, 345, 456, null],
+            "id": 73643,
+            "location": "Equipped",
+            "skin": 300,
+            "slot": "Leggings"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "id": 73043,
+            "location": "Equipped",
+            "slot": "Shoulders"
+          },
+          {
+            "binding": "Account",
+            "dyes": [48, 345, 345, 345],
+            "id": 67004,
+            "location": "Equipped",
+            "skin": 11118,
+            "slot": "Backpack"
+          },
+          {
+            "binding": "Account",
+            "id": 68532,
+            "location": "Equipped",
+            "slot": "Accessory1"
+          },
+          {
+            "binding": "Account",
+            "id": 67896,
+            "location": "Equipped",
+            "slot": "Accessory2"
+          },
+          {
+            "binding": "Account",
+            "id": 67906,
+            "location": "Equipped",
+            "slot": "Ring1"
+          },
+          {
+            "binding": "Account",
+            "id": 67905,
+            "location": "Equipped",
+            "slot": "Ring2"
+          },
+          {
+            "binding": "Account",
+            "id": 67900,
+            "location": "Equipped",
+            "slot": "Amulet"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "id": 46009,
+            "location": "Equipped",
+            "slot": "WeaponAquaticA",
+            "upgrades": [24548, 24570]
+          },
+          {
+            "binding": "Account",
+            "id": 80710,
+            "location": "Equipped",
+            "slot": "WeaponA1"
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "id": 26152,
+            "location": "Equipped",
+            "skin": 7693,
+            "slot": "WeaponA2",
+            "upgrades": [24601]
+          },
+          {
+            "binding": "Character",
+            "bound_to": "Nevii Sonar",
+            "id": 27485,
+            "location": "Equipped",
+            "skin": 7643,
+            "slot": "WeaponB1",
+            "upgrades": [24570, 24601]
+          }
+        ],
+        "is_active": true,
+        "name": "",
+        "tab": 1
+      },
+      {
+        "equipment": [],
+        "is_active": false,
+        "name": "",
+        "tab": 2
+      }
+    ],
+    "equipment_tabs_unlocked": 2,
+    "flags": [],
+    "gender": "Female",
+    "guild": "4277F4AB-9141-ED11-81AC-95DFE50946EB",
+    "last_modified": "2025-03-18T03:56:00Z",
+    "level": 80,
+    "name": "Nevii Sonar",
+    "profession": "Elementalist",
+    "race": "Asura",
+    "recipes": [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+      32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+      60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87,
+      88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 111, 112, 113, 114, 115, 116, 117, 118, 119,
+      120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142,
+      143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165,
+      166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 196, 197, 198, 199, 200, 201, 202,
+      203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225,
+      226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 2013, 2014,
+      2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033,
+      2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2053, 2054,
+      2055, 2056, 2065, 2122, 2132, 2137, 2138, 2139, 2145, 2147, 2148, 2149, 2150, 2153, 2154, 2157, 2158, 2160, 2161,
+      2163, 2164, 2168, 2172, 2173, 2174, 2175, 2177, 2184, 2185, 2189, 2195, 2199, 2200, 2203, 2206, 2207, 2208, 2209,
+      2212, 2215, 2218, 2221, 2224, 2227, 2228, 2229, 2231, 2232, 2243, 2244, 2245, 2247, 2254, 2255, 2259, 2264, 2265,
+      2266, 2267, 2268, 2269, 2270, 2271, 2272, 2273, 2274, 2275, 2276, 2277, 2278, 2279, 2280, 2281, 2282, 2283, 2284,
+      2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293, 2294, 2295, 2296, 2297, 2298, 2299, 2346, 2426, 2428, 2430,
+      2472, 2549, 2560, 2561, 2562, 2563, 2570, 2571, 2572, 2579, 2580, 2581, 2582, 2583, 2584, 2811, 2812, 2813, 2818,
+      2819, 2820, 2821, 2824, 2826, 3161, 3380, 3381, 3382, 3383, 3384, 3385, 3386, 3387, 3388, 3389, 3390, 3391, 3392,
+      3394, 3395, 3396, 3397, 3398, 3399, 3400, 3401, 3402, 3403, 3404, 3405, 3406, 3407, 3408, 3409, 3410, 3411, 3412,
+      3413, 3414, 3415, 3416, 3417, 3418, 3419, 3420, 3421, 3422, 3423, 3424, 3425, 3426, 3427, 3428, 3429, 3430, 3431,
+      3432, 3433, 3434, 3435, 3446, 3453, 3454, 3461, 3462, 3463, 3464, 3465, 3466, 3467, 3507, 3513, 3519, 3529, 3566,
+      3567, 3570, 3623, 3636, 3643, 3697, 3711, 3713, 3714, 3715, 3716, 3717, 3718, 3719, 3720, 3721, 3728, 3729, 3807,
+      3808, 3809, 3810, 3811, 3812, 3813, 3814, 3815, 3816, 3817, 3818, 3819, 3820, 3821, 3822, 3823, 3824, 3825, 3826,
+      3827, 3828, 3829, 3830, 3831, 3832, 3833, 3834, 3835, 3837, 3838, 3839, 3841, 3842, 3844, 3845, 3846, 3848, 3849,
+      3851, 3852, 3853, 3854, 3855, 3856, 3857, 3859, 3860, 3861, 3862, 3863, 3864, 3880, 3881, 3882, 3883, 3884, 3885,
+      3886, 3887, 3888, 3889, 3890, 3891, 3892, 3893, 3894, 3895, 3896, 3897, 3898, 3899, 3900, 3901, 3902, 3903, 3904,
+      3905, 3906, 3907, 3908, 3909, 3910, 3912, 3915, 3921, 3922, 3927, 3941, 3942, 3943, 3983, 3984, 3985, 3986, 3987,
+      3988, 3994, 3995, 3997, 3998, 4002, 4017, 4019, 4060, 4064, 4065, 4066, 4070, 4071, 4077, 4078, 4083, 4084, 4139,
+      4140, 4141, 4142, 4143, 4144, 4146, 4148, 4155, 4156, 4162, 4163, 4164, 4175, 4176, 4177, 4203, 4205, 4207, 4208,
+      4209, 4255, 4258, 4259, 4263, 4265, 4266, 4268, 4270, 4273, 4274, 4277, 4278, 4300, 4310, 4311, 4312, 4318, 4319,
+      4322, 4326, 4327, 4333, 4448, 4449, 4450, 4457, 5324, 5325, 5326, 5327, 5330, 5332, 5333, 5334, 5335, 5336, 5337,
+      5339, 5340, 5342, 5343, 5345, 5346, 5347, 5348, 5349, 5350, 5351, 5352, 5353, 5354, 5355, 5356, 5357, 5358, 5359,
+      5360, 5361, 5362, 5363, 5364, 5365, 5366, 5367, 5368, 5369, 5370, 5371, 5372, 5373, 5374, 5375, 5376, 5377, 5378,
+      5379, 5380, 5381, 5382, 5383, 5384, 5385, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5401, 5402,
+      5403, 5404, 5405, 5406, 5407, 5408, 5409, 5410, 5411, 5412, 5413, 5414, 5415, 5416, 5417, 5422, 5423, 5425, 5426,
+      5427, 5428, 5429, 5450, 5452, 5453, 5455, 5458, 5500, 5501, 5505, 5508, 5512, 5513, 5516, 5520, 5524, 5525, 5533,
+      5536, 5537, 5541, 5544, 5547, 5548, 5549, 5552, 5553, 5556, 5560, 5561, 5566, 5572, 5573, 5577, 5578, 5580, 5584,
+      5585, 5588, 5592, 5596, 5597, 5620, 5632, 5681, 5685, 5688, 5692, 5693, 5696, 5704, 5705, 5714, 5716, 5717, 5718,
+      5719, 5725, 5726, 5727, 5728, 5732, 5733, 5809, 5851, 5893, 5895, 5935, 5937, 6019, 6021, 6059, 6060, 6061, 6062,
+      6063, 6064, 6065, 6067, 6068, 6069, 6070, 6071, 6072, 6077, 6084, 6088, 6092, 6104, 6167, 6209, 6300, 6301, 6302,
+      6304, 6305, 6306, 6307, 6497, 6725, 6726, 6727, 6728, 6729, 6730, 6731, 6732, 6744, 6745, 6746, 6747, 6748, 6749,
+      6750, 6812, 6813, 6814, 6822, 6823, 6827, 6828, 6837, 6838, 6840, 6842, 6843, 6845, 6888, 6893, 6909, 6912, 6915,
+      6917, 6927, 6929, 6935, 6958, 7002, 7003, 7004, 7005, 7006, 7007, 7230, 7237, 7242, 7261, 7307, 7308, 7309, 7310,
+      7311, 7312, 7313, 7314, 7316, 7317, 7318, 7319, 7320, 7321, 7330, 7339, 7340, 7341, 7343, 7375, 7423, 7424, 7627,
+      7628, 7629, 7633, 7651, 7652, 7657, 7675, 7699, 7705, 7723, 7729, 7747, 7748, 7749, 7753, 7771, 7772, 7777, 7795,
+      7796, 7797, 7798, 7799, 7800, 7801, 7802, 7803, 7804, 7805, 7806, 7807, 7808, 7809, 7843, 7848, 7849, 7851, 7852,
+      7853, 7854, 7855, 7856, 8391, 8460, 8672, 8673, 8674, 8675, 8676, 8677, 8678, 8679, 8680, 8681, 8682, 8683, 8684,
+      8829, 8830, 8831, 8832, 8833, 8834, 8835, 8836, 8837, 8838, 8839, 8840, 8841, 8842, 8843, 8844, 9146, 9170, 9178,
+      9186, 9274, 9275, 9276, 9277, 9278, 9280, 9281, 9282, 9283, 9284, 9285, 9286, 9465, 9466, 9467, 9468, 9469, 9470,
+      9471, 9472, 9473, 9474, 9475, 9476, 9477, 9623, 9624, 9625, 9626, 9627, 9628, 9629, 9630, 9631, 9632, 9633, 9634,
+      9635, 9664, 9668, 9673, 9693, 9742, 9790, 9791, 9792, 9793, 9794, 9796, 9800, 9810, 9811, 9812, 9813, 9814, 9816,
+      9819, 9820, 9821, 9825, 9826, 9827, 9854, 9855, 9857, 9858, 9863, 9864, 9865, 9868, 9869, 9872, 9874, 9876, 9878,
+      9879, 9914, 9930, 9940, 9953, 9954, 9962, 10002, 10134, 10144, 10174, 10177, 10216, 10240, 10254, 10297, 10314,
+      10321, 10323, 10338, 10370, 10384, 10442, 10445, 10463, 10472, 10492, 10497, 10540, 10544, 10611, 10647, 10718,
+      10720, 10731, 10771, 10778, 10784, 10804, 10832, 10840, 10862, 10865, 10882, 10885, 10890, 10914, 10915, 10917,
+      10930, 10944, 10950, 10998, 11015, 11042, 11043, 11047, 11056, 11077, 11108, 11162, 11176, 11188, 11206, 11213,
+      11214, 11221, 11240, 11275, 11285, 11288, 11296, 11338, 11352, 11357, 11358, 11398, 11454, 11480, 11481, 11493,
+      11520, 11525, 11540, 11571, 11578, 11616, 11628, 11640, 11847, 11849, 11850, 11851, 11852, 11854, 11855, 11856,
+      11867, 11868, 11987, 12021, 12026, 12053, 12055, 12056, 12068, 12071, 12075, 12082, 12090, 12091, 12129, 12132,
+      12134, 12145, 12153, 12155, 12160, 12161, 12180, 12184, 12202, 12209, 12241, 12257, 12258, 12271, 12284, 12286,
+      12291, 12304, 12344, 12371, 12650, 12653, 12654, 12655, 12659, 12700, 12843, 12869, 12877, 12885, 12891, 12898,
+      12915, 12921, 12926, 12930, 12963, 12967, 12985, 13006, 13138, 13139, 13150, 13168, 13172, 13179, 13180, 13202,
+      13206, 13221, 13839, 14164, 14494, 14805, 14824, 14846, 14883, 15047
+    ],
+    "title": 210,
+    "training": [],
+    "wvw_abilities": [
+      {
+        "id": 17,
+        "rank": 2
+      },
+      {
+        "id": 15,
+        "rank": 1
+      },
+      {
+        "id": 14,
+        "rank": 1
+      },
+      {
+        "id": 26,
+        "rank": 2
+      },
+      {
+        "id": 25,
+        "rank": 2
+      }
+    ]
+  }
+]
