@@ -1,5 +1,5 @@
 import { describe, it, expectTypeOf, vi, expect } from 'vitest';
-import * as data from './examples/groups';
+import * as data from './examples/list';
 import type { Response } from '../list';
 import { rfetch } from '@ribbon-studios/js-utils';
 import { GuildWars2 } from '@/index';
@@ -15,10 +15,10 @@ describe('fn(list)', () => {
 
     const api = new GuildWars2();
 
-    const response = await api.v2.achievements.groups.list();
+    const response = await api.v2.achievements.categories.list();
 
-    expect(response).length(18);
-    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/achievements/groups', {
+    expect(response).length(326);
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/achievements/categories', {
       params: {
         v: Schema.LATEST,
       },
@@ -26,22 +26,22 @@ describe('fn(list)', () => {
     expectTypeOf(response).toEqualTypeOf<Response<Schema.V11, undefined>>();
   });
 
-  it('should return the achievement groups', async () => {
+  it('should return the achievement categories', async () => {
     fetchMock.get.mockResolvedValue(data.ids);
 
     const api = new GuildWars2();
 
-    const response = await api.v2.achievements.groups.list({
-      ids: '18DB115A-8637-4290-A636-821362A3C4A8',
+    const response = await api.v2.achievements.categories.list({
+      ids: 1,
     });
 
-    expect(response).length(18);
-    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/achievements/groups', {
+    expect(response).length(1);
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/achievements/categories', {
       params: {
-        ids: '18DB115A-8637-4290-A636-821362A3C4A8',
+        ids: 1,
         v: Schema.LATEST,
       },
     });
-    expectTypeOf(response).toEqualTypeOf<Response<Schema.V11, string>>();
+    expectTypeOf(response).toEqualTypeOf<Response<Schema.V11, number>>();
   });
 });

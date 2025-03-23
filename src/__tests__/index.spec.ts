@@ -30,7 +30,7 @@ describe('class(GuildWars2)', () => {
     expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches', 'objectiveNames']);
 
     expect(Object.keys(gw2.v2)).toEqual(['config', 'achievements', 'build', 'tokeninfo']);
-    expect(Object.keys(gw2.v2.achievements)).toEqual(['groups', 'get', 'list']);
+    expect(Object.keys(gw2.v2.achievements)).toEqual(['categories', 'groups', 'get', 'list']);
   });
 
   it('should set default config values', () => {

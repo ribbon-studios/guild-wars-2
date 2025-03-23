@@ -349,3 +349,102 @@ export namespace AchievementGroup {
     categories: number[];
   };
 }
+
+export type AchievementCategory<T extends Schema> = SchemaTypes<{
+  [Schema.V0]: AchievementCategory.V0;
+  [Schema.V10]: AchievementCategory.V1;
+}>[T];
+
+export namespace AchievementCategory {
+  export type V0 = {
+    /**
+     * The id of the category.
+     */
+    id: number;
+
+    /**
+     * The category name.
+     */
+    name: string;
+
+    /**
+     * The category description.
+     */
+    description: string;
+
+    /**
+     * A number describing the sorting order of this category.
+     *
+     * Sorted least to greatest.
+     */
+    order: number;
+
+    /**
+     * A URL to an image for the icon of the category.
+     */
+    icon: string;
+
+    /**
+     * The achievement ids associated with this category.
+     */
+    achievements: number[];
+  };
+
+  export type V1 = Omit<V0, 'achievements'> & {
+    /**
+     * The categories achievements.
+     */
+    achievements: Achievement[];
+
+    /**
+     * The achievements that will be active tomorrow.
+     */
+    tomorrow?: Achievement[];
+  };
+
+  export type Achievement = {
+    /**
+     * The achievement id.
+     */
+    id: number;
+
+    required_access?: {
+      /**
+       * The required expansion.
+       */
+      product: Product;
+
+      /**
+       * The condition if an account can or cannot see this daily achievement.
+       */
+      condition: Condition;
+    };
+
+    /**
+     * The type of daily achievement.
+     */
+    flags?: Flags;
+
+    /**
+     * The level range for the daily achievement.
+     */
+    level?: [number, number];
+  };
+
+  export enum Product {
+    HEART_OF_THORNS = 'HeartOfThorns',
+    PATH_OF_FIRE = 'PathOfFire',
+  }
+
+  export enum Condition {
+    HAS_ACCESS = 'HasAccess',
+    NO_ACCESS = 'NoAccess',
+  }
+
+  export enum Flags {
+    PVE = 'PvE',
+    PVP = 'PvP',
+    WVW = 'WvW',
+    SPECIAL_EVENT = 'SpecialEvent',
+  }
+}

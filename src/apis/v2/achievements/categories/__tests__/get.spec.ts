@@ -10,22 +10,19 @@ vi.mock('@ribbon-studios/js-utils');
 const fetchMock = vi.mocked(rfetch, true);
 
 describe('fn(get)', () => {
-  it('should return the achievement group', async () => {
+  it('should return the achievement category', async () => {
     fetchMock.get.mockResolvedValue(data);
 
     const api = new GuildWars2();
 
-    const response = await api.v2.achievements.groups.get('18DB115A-8637-4290-A636-821362A3C4A8');
+    const response = await api.v2.achievements.categories.get(1);
 
-    expect(response.id).toEqual('18DB115A-8637-4290-A636-821362A3C4A8');
-    expect(fetchMock.get).toHaveBeenCalledWith(
-      'https://api.guildwars2.com/v2/achievements/groups/18DB115A-8637-4290-A636-821362A3C4A8',
-      {
-        params: {
-          v: Schema.LATEST,
-        },
-      }
-    );
+    expect(response.id).toEqual(1);
+    expect(fetchMock.get).toHaveBeenCalledWith('https://api.guildwars2.com/v2/achievements/categories/1', {
+      params: {
+        v: Schema.LATEST,
+      },
+    });
     expectTypeOf(response).toEqualTypeOf<Response<Schema.V11>>();
   });
 });
