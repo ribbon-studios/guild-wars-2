@@ -11,7 +11,7 @@ export type Options<V extends Schema, Ids extends Params.Ids<number>> = V2.Optio
 
 export type Response<V extends Schema, Ids extends Params.Ids<number>> = Ids extends undefined
   ? number[]
-  : Achievement<V>;
+  : Achievement<V>[];
 
 export function list<V extends Schema, O extends Schema = V, Ids extends Params.Ids<number> = undefined>(
   this: V2.API<V>,
