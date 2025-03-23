@@ -314,3 +314,38 @@ export namespace Achievement {
     }
   }
 }
+
+export type AchievementGroup<V extends Schema> = SchemaTypes<{
+  [Schema.V0]: AchievementGroup.V0;
+}>[V];
+
+export namespace AchievementGroup {
+  export type V0 = {
+    /**
+     * The id of the group.
+     */
+    id: string;
+
+    /**
+     * The group name.
+     */
+    name: string;
+
+    /**
+     * The group description.
+     */
+    description: string;
+
+    /**
+     * A number describing the sorting order of this group.
+     *
+     * Sorted least to greatest.
+     */
+    order: number;
+
+    /**
+     * The categories associated with this group.
+     */
+    categories: number[];
+  };
+}
