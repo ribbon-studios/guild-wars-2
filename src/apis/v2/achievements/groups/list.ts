@@ -1,5 +1,5 @@
 import { Params, Schema } from '@/types/v2';
-import type { V2 } from '../';
+import type { V2 } from '@/apis/v2';
 import { AchievementGroup } from '@/types/v2/achievement';
 
 export type Options<V extends Schema, Ids extends Params.Ids<string>> = V2.Options<V, true> & {
@@ -13,7 +13,7 @@ export type Response<V extends Schema, Ids extends Params.Ids<string>> = Ids ext
   ? string[]
   : AchievementGroup<V>[];
 
-export function groups<V extends Schema, O extends Schema = V, Ids extends Params.Ids<string> = undefined>(
+export function list<V extends Schema, O extends Schema = V, Ids extends Params.Ids<string> = undefined>(
   this: V2.API<V>,
   options?: Options<O, Ids>
 ) {

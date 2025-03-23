@@ -1,0 +1,7 @@
+{
+  "id": "18DB115A-8637-4290-A636-821362A3C4A8",
+  "name": "Daily",
+  "description": "Achievements that change on a daily basis.",
+  "order": 1,
+  "categories": [79, 88, 98, 102, 162, 201, 213, 221, 233, 238, 243, 250, 321, 330, 367]
+}
