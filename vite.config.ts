@@ -25,7 +25,7 @@ export default defineConfig({
   },
   test: {
     environment: 'node',
-    setupFiles: ['./__tests__/setup-tests.ts'],
+    setupFiles: ['./__tests__/setup-tests.ts', 'dotenv/config'],
     include: ['./src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     typecheck: {
       enabled: true,

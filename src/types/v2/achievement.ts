@@ -448,3 +448,50 @@ export namespace AchievementCategory {
     SPECIAL_EVENT = 'SpecialEvent',
   }
 }
+
+export type AccountAchievement<T extends Schema> = SchemaTypes<{
+  [Schema.V0]: AccountAchievement.V0;
+}>[T];
+
+export namespace AccountAchievement {
+  export type V0 = {
+    /**
+     * The achievement id.
+     */
+    id: Achievement.V0['id'];
+
+    /**
+     * Contains a number of objects to give more information on the progress of the achievement.
+     */
+    bits: Achievement.V0['bits'];
+
+    /**
+     * The player's current progress towards the achievement.
+     */
+    current?: number;
+
+    /**
+     * The amount needed to complete the achievement.
+     */
+    max?: number;
+
+    /**
+     * Whether the achievement is completed.
+     */
+    done: boolean;
+
+    /**
+     * The number of times this achievement has been repeated.
+     */
+    repeated?: number;
+
+    /**
+     * Whether this achievement has been unlocked.
+     * @example
+     * true       // Unlocked
+     * undefined  // Unlocked
+     * false      // Locked
+     */
+    unlocked?: boolean;
+  };
+}

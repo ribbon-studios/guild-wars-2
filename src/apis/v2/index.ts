@@ -3,6 +3,7 @@ import type { GuildWars2, SupportedLanguages } from '@/index';
 import { Schema } from '@/types/v2';
 import { bind } from '@/utils';
 
+import * as account from './account';
 import * as achievements from './achievements';
 
 import { build } from './build';
@@ -43,6 +44,7 @@ export class V2<V extends Schema> implements V2.API<V> {
     return rfetch.get<T>(url.toString(), rfetchOptions);
   }
 
+  account = bind(account, this as V2.API<V>);
   achievements = bind(achievements, this as V2.API<V>);
 
   build = build;
