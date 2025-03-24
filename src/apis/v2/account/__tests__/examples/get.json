@@ -1,0 +1,20 @@
+{
+  "id": "31ed4f96-5ab6-42bc-b010-0c15531f1ea8",
+  "name": "MyUser.2000",
+  "age": 5012100,
+  "last_modified": "2025-03-24T04:53:00Z",
+  "world": 1022,
+  "guilds": ["7fab0725-867b-41b8-8a45-2e39a52e1c55", "f1643bd0-5fc0-4fe8-bd79-e596c3411b99"],
+  "guild_leader": ["7fab0725-867b-41b8-8a45-2e39a52e1c55"],
+  "created": "2012-10-02T21:05:00Z",
+  "access": ["GuildWars2", "HeartOfThorns", "PathOfFire", "EndOfDragons", "SecretsOfTheObscure", "JanthirWilds"],
+  "commander": false,
+  "wvw": {
+    "team_id": 12345,
+    "rank": 41
+  },
+  "fractal_level": 21,
+  "daily_ap": 2121,
+  "monthly_ap": 400,
+  "build_storage_slots": 6
+}

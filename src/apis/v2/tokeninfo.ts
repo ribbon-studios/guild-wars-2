@@ -1,4 +1,4 @@
-import { Schema, SchemaTypes, TokenInfo } from '@/types/v2';
+import { Schema, TokenInfo } from '@/types/v2';
 import type { V2 } from '.';
 
 export type Options<V extends Schema> = V2.Options<V> & {
@@ -8,16 +8,13 @@ export type Options<V extends Schema> = V2.Options<V> & {
   access_token?: string;
 };
 
-export type Responses = SchemaTypes<{
-  [Schema.V0]: TokenInfo.V0;
-  [Schema.V4]: TokenInfo.V1;
-}>;
+export type Response<V extends Schema> = TokenInfo<V>;
 
 /**
  * Returns information about the api key.
  */
 export function tokeninfo<V extends Schema, O extends Schema = V>(this: V2.API<V>, options?: Options<O>) {
-  return this.fetch<Responses[O]>('/v2/tokeninfo', {
+  return this.fetch<Response<O>>('/v2/tokeninfo', {
     params: options,
   });
 }

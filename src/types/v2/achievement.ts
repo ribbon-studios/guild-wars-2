@@ -1,10 +1,12 @@
 import { Schema, SchemaTypes } from './schema';
 
-export type Achievement<V extends Schema> = SchemaTypes<{
-  [Schema.V0]: Achievement.V0;
-}>[V];
+export type Achievement<V extends Schema> = SchemaTypes<Achievement.Changes>[V];
 
 export namespace Achievement {
+  export type Changes = {
+    [Schema.V0]: Achievement.V0;
+  };
+
   export type V0 = {
     /**
      * The achievement id.

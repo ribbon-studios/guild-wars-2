@@ -1,4 +1,13 @@
+import { Schema, SchemaTypes } from './schema';
+
+export type TokenInfo<T extends Schema> = SchemaTypes<TokenInfo.Changes>[T];
+
 export namespace TokenInfo {
+  export type Changes = {
+    [Schema.V0]: TokenInfo.V0;
+    [Schema.V4]: TokenInfo.V1;
+  };
+
   export type V0 = {
     /**
      * The first half of the API key that was requested.
