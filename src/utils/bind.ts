@@ -20,7 +20,14 @@ export namespace bind {
   // This is getting marked as untested for some reason. Just ignore it.
   /* node:coverage ignore next */
   export function fn<F extends Function, V>(fn: F, thisBind: V): F {
-    return fn.bind(thisBind);
+    const output = fn.bind(thisBind);
+
+    // Forward any namespace properties as well
+    for (const key in fn) {
+      output[key] = fn[key];
+    }
+
+    return output;
   }
 
   export type Bound<T, V> = {

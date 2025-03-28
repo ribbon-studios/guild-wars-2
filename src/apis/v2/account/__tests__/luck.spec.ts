@@ -1,8 +1,8 @@
 import { describe, it, expectTypeOf, vi, expect } from 'vitest';
 import * as data from './examples/get.json';
-import type { Response } from '../luck';
+import { luck, type Response } from '../luck';
 import { GuildWars2 } from '@/index';
-import { Schema } from '@/types/v2';
+import { Schema, Scopes } from '@/types/v2';
 import { rfetch } from '@ribbon-studios/js-utils';
 
 vi.mock('@ribbon-studios/js-utils');
@@ -23,5 +23,9 @@ describe('fn(get)', () => {
       },
     });
     expectTypeOf(response).toEqualTypeOf<Response<Schema.V11>>();
+  });
+
+  it('should return the required scopes', async () => {
+    expect(luck.scopes).toEqual([Scopes.ACCOUNT, Scopes.PROGRESSION, Scopes.UNLOCKS]);
   });
 });

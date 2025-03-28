@@ -20,5 +20,6 @@ export function luck<V extends Schema, O extends Schema = V>(this: V2.API<V>, op
 }
 
 export namespace luck {
+  /* node:coverage ignore next */
   export const scopes: Scopes[] = [Scopes.ACCOUNT, Scopes.PROGRESSION, Scopes.UNLOCKS];
 }
