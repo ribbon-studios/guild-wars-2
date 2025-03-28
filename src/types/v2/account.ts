@@ -158,3 +158,23 @@ export namespace Account {
     rank: number;
   };
 }
+
+export type Luck<T extends Schema> = SchemaTypes<{
+  [Schema.V0]: Luck.V0;
+}>[T];
+
+export namespace Luck {
+  export type V0 = {
+    /**
+     * The id (the only known value for this is 'luck')
+     */
+    id: string;
+
+    /**
+     * The amount of luck consumed.
+     *
+     * @note This can exceed the 4,295,450 luck required to hit max magic find.
+     */
+    value: number;
+  };
+}

@@ -30,7 +30,7 @@ describe('class(GuildWars2)', () => {
     expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches', 'objectiveNames']);
 
     expect(Object.keys(gw2.v2)).toEqual(['config', 'account', 'achievements', 'build', 'tokeninfo']);
-    expect(Object.keys(gw2.v2.account)).toEqual(['achievements', 'get']);
+    expect(Object.keys(gw2.v2.account)).toEqual(['achievements', 'get', 'luck']);
     expect(Object.keys(gw2.v2.achievements)).toEqual(['categories', 'groups', 'get', 'list']);
   });
 
