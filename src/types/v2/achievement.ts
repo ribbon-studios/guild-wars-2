@@ -56,7 +56,7 @@ export namespace Achievement {
     /**
      * Achievements required to unlock this achievement.
      */
-    prerequisites: V0['id'][];
+    prerequisites?: V0['id'][];
 
     /**
      * The achievement rewards.
