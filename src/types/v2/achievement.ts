@@ -143,12 +143,12 @@ export namespace Achievement {
     /**
      * An achievement that resets monthly.
      */
-    Monthly = 'Monthly',
+    MONTHLY = 'Monthly',
 
     /**
      * An achievement that never resets.
      */
-    Permanent = 'Permanent',
+    PERMANENT = 'Permanent',
   }
 
   export type Tier = {
