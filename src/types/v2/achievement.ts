@@ -463,9 +463,9 @@ export namespace AccountAchievement {
     id: Achievement.V0['id'];
 
     /**
-     * Contains a number of objects to give more information on the progress of the achievement.
+     * Contains an array of numbers indicating which bits are completed.
      */
-    bits: Achievement.V0['bits'];
+    bits: number[];
 
     /**
      * The player's current progress towards the achievement.
