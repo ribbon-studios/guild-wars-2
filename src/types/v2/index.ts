@@ -1,5 +1,6 @@
 export * from './account';
 export * from './achievement';
+export * from './minis';
 export * from './params';
 export * from './races';
 export * from './schema';

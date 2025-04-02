@@ -13,6 +13,7 @@ export class GuildWars2<V extends Schema = Schema.LATEST> {
     this.config = {
       v: Schema.LATEST as V,
       lang: SupportedLanguages.ENGLISH,
+      apply_corrections: true,
       ...config,
     };
 
@@ -22,7 +23,10 @@ export class GuildWars2<V extends Schema = Schema.LATEST> {
 }
 
 export namespace GuildWars2 {
-  export type InternalConfig<V extends Schema> = BetterRequired<GuildWars2.Config<V>, 'v' | 'lang'>;
+  export type InternalConfig<V extends Schema> = BetterRequired<
+    GuildWars2.Config<V>,
+    'v' | 'lang' | 'apply_corrections'
+  >;
 
   export type Config<V extends Schema> = Config.V1 & {
     /**
@@ -35,6 +39,17 @@ export namespace GuildWars2 {
      * The default schema version.
      */
     v?: V;
+
+    /**
+     * Whether or not we should automatically fix invalid data.
+     *
+     * **Examples**
+     *
+     * {@link https://wiki.guildwars2.com/wiki/API:2/minis}
+     *
+     * @default true
+     */
+    apply_corrections?: boolean;
   };
 
   export namespace Config {

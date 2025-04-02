@@ -1,0 +1,18 @@
+[
+  {
+    "id": 598,
+    "name": "Mini Blue Raptor Hatchling",
+    "unlock": "<c=@reminder>This mini can only be crafted in the Mystic Forge.</c>",
+    "icon": "https://render.guildwars2.com/file/37BD63B06A92F2340B3995C4792B31ADE336B30E/1821087.png",
+    "order": 551,
+    "item_id": 85057
+  },
+  {
+    "id": 599,
+    "name": "((208738))",
+    "unlock": "Found only in Black Lion Chests during specific times of the year.",
+    "icon": "https://render.guildwars2.com/file/EF38900B0ED226A72130A4B108AD245396C2556E/1861679.png",
+    "order": 566,
+    "item_id": 6
+  }
+]

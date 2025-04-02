@@ -29,7 +29,16 @@ describe('class(GuildWars2)', () => {
     ]);
     expect(Object.keys(gw2.v1.wvw)).toEqual(['matchDetails', 'matches', 'objectiveNames']);
 
-    expect(Object.keys(gw2.v2)).toEqual(['config', 'account', 'achievements', 'races', 'titles', 'build', 'tokeninfo']);
+    expect(Object.keys(gw2.v2)).toEqual([
+      'config',
+      'account',
+      'achievements',
+      'minis',
+      'races',
+      'titles',
+      'build',
+      'tokeninfo',
+    ]);
     expect(Object.keys(gw2.v2.account)).toEqual(['achievements', 'get', 'luck']);
     expect(Object.keys(gw2.v2.achievements)).toEqual(['categories', 'groups', 'get', 'list']);
   });
@@ -40,6 +49,7 @@ describe('class(GuildWars2)', () => {
     expect(gw2.config).toEqual({
       v: Schema.LATEST,
       lang: SupportedLanguages.ENGLISH,
+      apply_corrections: true,
     });
   });
 
@@ -47,11 +57,13 @@ describe('class(GuildWars2)', () => {
     const gw2 = new GuildWars2({
       v: Schema.V9,
       lang: SupportedLanguages.CHINESE,
+      apply_corrections: false,
     });
 
     expect(gw2.config).toEqual({
       v: Schema.V9,
       lang: SupportedLanguages.CHINESE,
+      apply_corrections: false,
     });
   });
 });
