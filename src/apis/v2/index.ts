@@ -5,6 +5,7 @@ import { bind } from '@/utils';
 
 import * as account from './account';
 import * as achievements from './achievements';
+import * as items from './items';
 import * as minis from './minis';
 import * as races from './races';
 import * as titles from './titles';
@@ -49,6 +50,7 @@ export class V2<V extends Schema> implements V2.API<V> {
 
   account = bind(account, this as V2.API<V>);
   achievements = bind(achievements, this as V2.API<V>);
+  items = bind(items, this as V2.API<V>);
   minis = bind(minis, this as V2.API<V>);
   races = bind(races, this as V2.API<V>);
   titles = bind(titles, this as V2.API<V>);

@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Obsidian Heavy Greaves",
+    "description": "<c=@flavor>Imposing armor forged with the help of dwarven wizard Lyhr.</c>",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Legendary",
+    "vendor_value": 240,
+    "default_skin": 12048,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "NoSalvage", "NoSell", "DeleteWarning", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 101460,
+    "chat_link": "[&AgFUjAEA]",
+    "icon": "https://render.guildwars2.com/file/0EB6787B05B90E21D7982A3B2E75460166C6520D/3256181.png",
+    "details": {
+      "type": "Boots",
+      "weight_class": "Heavy",
+      "defense": 191,
+      "infusion_slots": [
+        {
+          "flags": ["Infusion"]
+        }
+      ],
+      "attribute_adjustment": 134.442,
+      "stat_choices": [
+        161, 155, 159, 157, 158, 160, 153, 605, 700, 616, 154, 156, 162, 686, 559, 754, 753, 799, 1026, 1067, 628, 1032,
+        1111, 1109, 1123, 1140, 1085, 1153, 1118, 1131, 1222, 1344, 1363, 1364, 1559, 1556, 1681, 1686, 1826
+      ]
+    }
+  },
+  {
+    "name": "Rampager's Seer Coat of Divinity",
+    "description": "",
+    "type": "Armor",
+    "level": 72,
+    "rarity": "Exotic",
+    "vendor_value": 360,
+    "default_skin": 9,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["SoulBindOnUse"],
+    "restrictions": [],
+    "id": 100,
+    "chat_link": "[&AgFkAAAA]",
+    "icon": "https://render.guildwars2.com/file/FB0AA64F98303AE5112408EF3DC8C7307EA118F8/61011.png",
+    "details": {
+      "type": "Coat",
+      "weight_class": "Light",
+      "defense": 271,
+      "infusion_slots": [],
+      "attribute_adjustment": 330.3,
+      "infix_upgrade": {
+        "id": 159,
+        "attributes": [
+          {
+            "attribute": "Power",
+            "modifier": 83
+          },
+          {
+            "attribute": "Precision",
+            "modifier": 116
+          },
+          {
+            "attribute": "ConditionDamage",
+            "modifier": 83
+          }
+        ]
+      },
+      "suffix_item_id": 24732
+    }
+  },
+  {
+    "name": "Armwraps of Madness",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Exotic",
+    "vendor_value": 238,
+    "default_skin": 930,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "NoSalvage", "NoSell", "SoulBindOnUse"],
+    "restrictions": [],
+    "id": 48809,
+    "chat_link": "[&AgGpvgAA]",
+    "icon": "https://render.guildwars2.com/file/170340BAA20B7CF9BEB99D10DEC79B0F4499BC21/61275.png",
+    "details": {
+      "type": "Gloves",
+      "weight_class": "Light",
+      "defense": 133,
+      "infusion_slots": [],
+      "attribute_adjustment": 128.04,
+      "suffix_item_id": 36044,
+      "stat_choices": [
+        161, 155, 159, 157, 158, 160, 153, 605, 700, 616, 154, 156, 162, 686, 559, 754, 753, 799, 1026, 1067, 628, 1032,
+        1231, 1232, 1226, 1225, 1229, 1224, 1228, 1227, 1230, 1379, 1377, 1378, 1484, 1539, 1717, 1687, 1826
+      ]
+    }
+  },
+  {
+    "name": "Angchu Leather Breather",
+    "description": "<c=@flavor>Crafted in the style of the ancient Angchu tengu tribe.</c>",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Ascended",
+    "vendor_value": 240,
+    "default_skin": 856,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 72249,
+    "chat_link": "[&AgE5GgEA]",
+    "icon": "https://render.guildwars2.com/file/FA1D042B0845BED8DA3CFA0FAA0837D5EB0207A6/61297.png",
+    "details": {
+      "type": "HelmAquatic",
+      "weight_class": "Medium",
+      "defense": 102,
+      "infusion_slots": [
+        {
+          "flags": ["Infusion"]
+        }
+      ],
+      "attribute_adjustment": 179.256,
+      "infix_upgrade": {
+        "id": 616,
+        "attributes": [
+          {
+            "attribute": "Power",
+            "modifier": 45
+          },
+          {
+            "attribute": "Toughness",
+            "modifier": 63
+          },
+          {
+            "attribute": "CritDamage",
+            "modifier": 45
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Aether Visor",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Exotic",
+    "vendor_value": 330,
+    "default_skin": 10841,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "NoSell", "SoulBindOnUse"],
+    "restrictions": [],
+    "id": 98089,
+    "chat_link": "[&AgEpfwEA]",
+    "icon": "https://render.guildwars2.com/file/9A741CA1B6DC0B0CCF6E227580A2265E62DF715D/2685589.png",
+    "details": {
+      "type": "Helm",
+      "weight_class": "Medium",
+      "defense": 97,
+      "infusion_slots": [],
+      "attribute_adjustment": 170.72,
+      "infix_upgrade": {
+        "id": 1111,
+        "attributes": [
+          {
+            "attribute": "Power",
+            "modifier": 51
+          },
+          {
+            "attribute": "Precision",
+            "modifier": 51
+          },
+          {
+            "attribute": "Vitality",
+            "modifier": 28
+          },
+          {
+            "attribute": "CritDamage",
+            "modifier": 28
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Obsidian Heavy Cuisses",
+    "description": "<c=@flavor>Imposing armor forged with the help of dwarven wizard Lyhr.</c>",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Legendary",
+    "vendor_value": 240,
+    "default_skin": 12049,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "NoSalvage", "NoSell", "DeleteWarning", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 101568,
+    "chat_link": "[&AgHAjAEA]",
+    "icon": "https://render.guildwars2.com/file/22BED3680AC1A1AB6B3ED4F8922891077DADF361/3256185.png",
+    "details": {
+      "type": "Leggings",
+      "weight_class": "Heavy",
+      "defense": 254,
+      "infusion_slots": [
+        {
+          "flags": ["Infusion"]
+        }
+      ],
+      "attribute_adjustment": 268.884,
+      "stat_choices": [
+        161, 155, 159, 157, 158, 160, 153, 605, 700, 616, 154, 156, 162, 686, 559, 754, 753, 799, 1026, 1067, 628, 1032,
+        1111, 1109, 1123, 1140, 1085, 1153, 1118, 1131, 1222, 1344, 1363, 1364, 1559, 1556, 1681, 1686, 1826
+      ]
+    }
+  },
+  {
+    "name": "Assaulter's Mist-Touched Epaulets",
+    "description": "A piece of high-quality armor.",
+    "type": "Armor",
+    "level": 80,
+    "rarity": "Ascended",
+    "vendor_value": 240,
+    "default_skin": 119,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["HideSuffix", "AccountBound", "NoSell", "DeleteWarning", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 91026,
+    "chat_link": "[&AgGSYwEA]",
+    "icon": "https://render.guildwars2.com/file/0C4E1FEED2C75BC8F6F1D3D11C18303EEF573EED/699208.png",
+    "details": {
+      "type": "Shoulders",
+      "weight_class": "Light",
+      "defense": 77,
+      "infusion_slots": [
+        {
+          "flags": ["Infusion"]
+        }
+      ],
+      "attribute_adjustment": 134.442,
+      "stat_choices": [
+        753, 161, 559, 616, 158, 159, 1067, 162, 157, 799, 1227, 1232, 1231, 1228, 1224, 1225, 1539, 1379, 1377, 1378,
+        1687, 1826
+      ]
+    }
+  },
+  {
+    "name": "Mawdrey",
+    "description": "<c=@flavor>After spending so much time cultivating this powerful vine through the generations, it's hard to not feel an attachment to it. Your beloved pet almost cuddles you in its tendrils. Clearly it feels a similar attachment.</c>",
+    "type": "Back",
+    "level": 80,
+    "rarity": "Ascended",
+    "vendor_value": 330,
+    "default_skin": 5544,
+    "game_types": ["Wvw", "Dungeon", "Pve"],
+    "flags": ["AccountBound", "NoSell", "NotUpgradeable", "DeleteWarning", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 67004,
+    "chat_link": "[&AgG8BQEA]",
+    "icon": "https://render.guildwars2.com/file/9D0D0E79270D4D0DDD7BEBAC159A0D6BBF1E69FB/855365.png",
+    "details": {
+      "infusion_slots": [
+        {
+          "flags": ["Infusion"]
+        }
+      ],
+      "attribute_adjustment": 89.628,
+      "stat_choices": [
+        584, 656, 658, 1119, 657, 1038, 1097, 659, 690, 583, 585, 1037, 586, 1035, 588, 1114, 1128, 1163, 1066, 1064,
+        660, 1430, 1436, 591, 581, 592, 1263, 1271, 1265, 1270, 1262, 1268, 1264, 1267, 1269, 1366, 1367, 1374, 1549,
+        1566, 1691, 1706, 1827
+      ]
+    }
+  },
+  {
+    "name": "8 Slot Invisible Bag",
+    "description": "8 Slots. Items in this bag will never appear in a sell-to-vendor list and will not move when inventory is sorted.",
+    "type": "Bag",
+    "level": 0,
+    "rarity": "Fine",
+    "vendor_value": 22,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["NoSalvage"],
+    "restrictions": [],
+    "id": 9480,
+    "chat_link": "[&AgEIJQAA]",
+    "icon": "https://render.guildwars2.com/file/647CF53A7C4903C2E09091CBDC4F215834C50A4B/219376.png",
+    "details": {
+      "no_sell_or_sort": true,
+      "size": 8
+    }
+  },
+  {
+    "name": "Bag of Coins",
+    "description": "Double-click to open.",
+    "type": "Container",
+    "level": 0,
+    "rarity": "Fine",
+    "vendor_value": 0,
+    "game_types": ["Pvp", "PvpLobby", "Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["NoSalvage", "NoSell", "SoulbindOnAcquire", "SoulBindOnUse"],
+    "restrictions": [],
+    "id": 36520,
+    "chat_link": "[&AgGojgAA]",
+    "icon": "https://render.guildwars2.com/file/3BF274D1A323C002CDCFE80724912CDB7C78ABEE/62857.png",
+    "details": {
+      "type": "Default"
+    }
+  },
+  {
+    "name": "Bronze Trident Head",
+    "description": "Used to craft Tridents.",
+    "type": "CraftingMaterial",
+    "level": 0,
+    "rarity": "Basic",
+    "vendor_value": 2,
+    "game_types": ["Activity", "Wvw", "Dungeon", "Pve"],
+    "flags": ["NoSalvage"],
+    "restrictions": [],
+    "id": 13000,
+    "chat_link": "[&AgHIMgAA]",
+    "icon": "https://render.guildwars2.com/file/9498D20ACAD065EA9848264A42CDCDF4271D0B62/63494.png"
+  },
+  {
+    "name": "Commander's Compendium",
+    "description": "Double-click to use. Unlock the ability to become a Commander.",
+    "type": "Gizmo",
+    "level": 11,
+    "rarity": "Fine",
+    "vendor_value": 125000,
+    "game_types": ["Wvw", "Dungeon", "Pve"],
+    "flags": ["AccountBound", "NoSalvage", "NoSell", "AccountBindOnUse"],
+    "restrictions": [],
+    "id": 22335,
+    "chat_link": "[&AgE/VwAA]",
+    "icon": "https://render.guildwars2.com/file/1F64A2799FC8666FFC66FE56DAA75C02E7E9BA6F/66753.png",
+    "details": {
+      "type": "Default"
+    }
+  }
+]
