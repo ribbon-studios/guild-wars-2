@@ -6,5 +6,6 @@ export * from './params';
 export * from './races';
 export * from './schema';
 export * from './scopes';
+export * from './skin';
 export * from './titles';
 export * from './tokeninfo';

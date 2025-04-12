@@ -1,0 +1,13 @@
+{
+  "name": "Onyx Spider's Warhorn",
+  "type": "Weapon",
+  "flags": ["ShowInWardrobe"],
+  "restrictions": [],
+  "rarity": "Basic",
+  "id": 12452,
+  "icon": "https://render.guildwars2.com/file/80EBC72DB5D599F522420A77A9EBC5BC6B1F5D23/3375557.png",
+  "details": {
+    "type": "Warhorn",
+    "damage_type": "Physical"
+  }
+}

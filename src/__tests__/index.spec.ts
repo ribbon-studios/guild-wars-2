@@ -36,6 +36,7 @@ describe('class(GuildWars2)', () => {
       'items',
       'minis',
       'races',
+      'skins',
       'titles',
       'build',
       'tokeninfo',

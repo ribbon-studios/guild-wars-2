@@ -8,6 +8,7 @@ import * as achievements from './achievements';
 import * as items from './items';
 import * as minis from './minis';
 import * as races from './races';
+import * as skins from './skins';
 import * as titles from './titles';
 
 import { build } from './build';
@@ -53,6 +54,7 @@ export class V2<V extends Schema> implements V2.API<V> {
   items = bind(items, this as V2.API<V>);
   minis = bind(minis, this as V2.API<V>);
   races = bind(races, this as V2.API<V>);
+  skins = bind(skins, this as V2.API<V>);
   titles = bind(titles, this as V2.API<V>);
 
   build = build;
