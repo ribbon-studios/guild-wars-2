@@ -26,7 +26,9 @@ const gw2 = new GuildWars2({
 
 export async function example(token: string) {
   await gw2.v1.mapNames();
-  await gw2.v2.tokeninfo();
+  await gw2.v2.minis.list({
+    ids: 'all',
+  });
 }
 ```
 
