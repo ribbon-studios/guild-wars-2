@@ -269,7 +269,7 @@ export namespace Achievement {
     }
   }
 
-  export type Bit = Bit.Text;
+  export type Bit = Bit.Text | Bit.Item | Bit.Minipet | Bit.Skin;
 
   export namespace Bit {
     export type Text = {
